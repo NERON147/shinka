@@ -13,7 +13,7 @@ module.exports = {
     extend: {
       colors: {
         primary: 'var(--primary)',
-        primary_2: 'var(--primary_2)',
+        primary2: 'var(--primary2)',
         primary_light: 'var(--primary_light)',
         dim_dark: 'var(--dim_dark)',
         primary_blue: 'var(--primary_blue)',
