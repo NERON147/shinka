@@ -30,12 +30,14 @@
     </section>
     <SpecialOffers />
     <WhyUsVue />
+    <Services />
   </article>
 </template>
 
 <script setup lang="ts">
 import SpecialOffers from '~/app/components/home/SpecialOffers.vue'
 import WhyUsVue from '~/app/components/home/WhyUs.vue'
+import Services from '~/app/components/home/Services.vue'
 </script>
 
 <style scoped></style>

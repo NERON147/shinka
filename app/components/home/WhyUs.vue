@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-gray-200 mt-20">
+  <section class="bg-gray-200 mt-20 pb-20">
     <div class="container">
       <h2 class="text-5xl text-center font-extrabold pt-20">
         ПОЧЕМУ МЫ?
