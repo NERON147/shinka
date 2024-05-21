@@ -30,7 +30,11 @@
     </section>
     <SpecialOffers />
     <WhyUsVue />
-    <Services />
+    <main>
+      <Services />
+      <Price />
+    </main>
+    <Reviews />
   </article>
 </template>
 
@@ -38,6 +42,8 @@
 import SpecialOffers from '~/app/components/home/SpecialOffers.vue'
 import WhyUsVue from '~/app/components/home/WhyUs.vue'
 import Services from '~/app/components/home/Services.vue'
+import Price from '~/app/components/home/Price.vue'
+import Reviews from '~/app/components/home/Reviews.vue'
 </script>
 
 <style scoped></style>

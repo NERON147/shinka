@@ -7,18 +7,18 @@ export default defineNuxtConfig({
       charset: 'utf-8',
       viewport: 'width=device-width, initial-scale=1',
       title: 'Wheel Garage',
-      link: [{ rel: 'icon', type: 'image/ico', href: '/assets/img/favicon.ico' }],
+      link: [{ rel: 'icon', type: 'image/ico', href: '/assets/img/favicon.ico' }]
     }
   },
-  modules: ["@nuxtjs/tailwindcss", "nuxt-primevue"],
+  modules: ['@nuxtjs/tailwindcss', 'nuxt-primevue', 'nuxt-swiper'],
   primevue: {
-    cssLayerOrder: "tailwind-base, primevue, tailwind-utilities",
+    cssLayerOrder: 'tailwind-base, primevue, tailwind-utilities',
     options: {
       ripple: true,
-      inputStyle: "filled",
-    },
+      inputStyle: 'filled'
+    }
   },
-  css: ["primevue/resources/themes/aura-light-green/theme.css", '~/app/assets/css/main.css'],
+  css: ['primevue/resources/themes/aura-light-green/theme.css', '~/app/assets/css/main.css'],
   dir: {
     modules: 'app/modules',
     plugins: 'app/plugins',
@@ -26,5 +26,5 @@ export default defineNuxtConfig({
     layouts: 'app/layouts',
     middleware: 'app/middleware'
   },
-  components: ['app/UIComponents'],
-});
+  components: ['app/UIComponents']
+})
