@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-gray-200">
+  <section class="bg-gray-200 pb-20">
     <div class="container">
       <h2 class="text-5xl text-center font-extrabold mt-[100px] pt-20 mb-20">
         РЕАЛЬНЫЕ ОТЗЫВЫ
@@ -13,6 +13,10 @@
           nextEl: '.next',
         }"
         :breakpoints="data.breakpoints"
+        :autoplay="{
+          delay: 3000,
+          disableOnInteraction: false
+        }"
       >
         <SwiperSlide v-for="(slide, index) in data.reviews" :key="index">
           <div

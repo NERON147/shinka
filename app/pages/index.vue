@@ -35,6 +35,8 @@
       <Price />
     </main>
     <Reviews />
+    <FAQ />
+    <FindUs />
   </article>
 </template>
 
@@ -44,6 +46,8 @@ import WhyUsVue from '~/app/components/home/WhyUs.vue'
 import Services from '~/app/components/home/Services.vue'
 import Price from '~/app/components/home/Price.vue'
 import Reviews from '~/app/components/home/Reviews.vue'
+import FAQ from '~/app/components/home/FAQ.vue'
+import FindUs from '~/app/components/home/FindUs.vue'
 </script>
 
 <style scoped></style>
