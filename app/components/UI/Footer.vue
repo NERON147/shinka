@@ -1,28 +1,28 @@
 <template>
   <section class="bg-gradient-to-r from-black to-slate-900 relative">
-    <div class="container text-white flex h-[694px]">
-      <div class="w-1/2">
-        <h2 class="text-5xl font-extrabold pt-20 tracking-wide leading-[70px]">
+    <div class="container text-white flex max-sxxs:h-full h-[694px]">
+      <div class="max-md:w-full w-1/2">
+        <h2 class="max-ss:text-2xl text-5xl font-extrabold pt-20 tracking-wide leading-[70px]">
           БАННЕР С ВЫГОДНЫМ <br>
           <span class="text-primary">
             ПРЕДЛОЖЕНИЕМ
           </span>
         </h2>
-        <p class="text-2xl mt-10">
+        <p class="max-ss:text-xl text-2xl mt-10">
           Оставьте заявку или позвоните прямо сейчас
         </p>
         <div class="mt-10 flex flex-col gap-5">
           <FloatLabel>
-            <InputText id="username" v-model="data.name" class="w-[500px] h-[50px]" />
+            <InputText id="username" v-model="data.name" class="max-ss:w-full w-[500px] h-[50px]" />
             <label for="username">ФИО</label>
           </FloatLabel>
           <FloatLabel>
-            <InputMask id="phone" v-model="data.phone" class="w-[500px] h-[50px]" mask="+7 (999) 999 99 99" placeholder="99-999999" />
+            <InputMask id="phone" v-model="data.phone" class="max-ss:w-full w-[500px] h-[50px]" mask="+7 (999) 999 99 99" placeholder="99-999999" />
             <label for="phone">Телефон</label>
           </FloatLabel>
           <Button
             label="Оставить заявку"
-            class="bg-[#b87a3c] border-[#b87a3c] h-12 hover:bg-[#946435] hover:border-[#946435] w-[500px]"
+            class="bg-[#b87a3c] border-[#b87a3c] h-12 hover:bg-[#946435] hover:border-[#946435] max-ss:w-full w-[500px]"
             plain
           />
           <div class="flex align-items-center mt-10">
@@ -33,7 +33,7 @@
         </div>
       </div>
       <div>
-        <img src="/assets/img/shina.png" alt="" class="absolute right-0 top-0">
+        <img src="/assets/img/shina.png" alt="" class="absolute right-0 top-0 max-md:hidden">
       </div>
     </div>
   </section>

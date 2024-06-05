@@ -1,6 +1,6 @@
 <template>
-  <section class="container mt-20">
-    <h2 class="text-5xl text-center font-extrabold pt-20">
+  <section id="FAQ" class="container mt-20">
+    <h2 class="max-sxxs:text-2xl max-sm:text-3xl max-md:text-4xl text-5xl text-center font-extrabold pt-20">
       ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ
     </h2>
     <div class="mt-10 ">
@@ -11,12 +11,12 @@
               <span class="font-light text-primary2">
                 {{ item.num }}
               </span>
-              <span class="font-bold text-3xl text-black">
+              <span class="font-bold max-ss:text-xl text-3xl text-black">
                 {{ item.title }}
               </span>
             </div>
           </template>
-          <ul class="m-0 list-disc ml-5 font-medium  text-xl" v-html="item.descr" />
+          <ul class="m-0 list-disc ml-5 font-medium  max-ss:text-sm text-xl" v-html="item.descr" />
         </AccordionTab>
       </Accordion>
     </div>

@@ -1,13 +1,13 @@
 <template>
-  <section class="container">
-    <h2 class="text-5xl text-center font-extrabold mt-[100px]">
+  <section id="prices" class="container">
+    <h2 class="max-sxxs:text-2xl max-sm:text-3xl max-md:text-4xl text-5xl text-center font-extrabold mt-[100px]">
       ЦЕНЫ НА УСЛУГИ
     </h2>
-    <div class="flex gap-[200px] mt-[100px]">
+    <div class="flex max-sm:gap-5 gap-[200px] mt-[100px] max-ss:flex-wrap">
       <p class="text-nowrap font-extrabold text-2xl">
         Замена резины
       </p>
-      <div class="grid grid-cols-12 w-full font-bold text-xl">
+      <div class="grid grid-cols-12 w-full font-bold text-xl max-ss:text-[16px]">
         <p class="col-span-2 text-center">
           R 14-15
         </p>
@@ -48,29 +48,29 @@
       </div>
     </div>
     <Divider class="border-[2px] my-[50px] border-primary2" />
-    <div class="flex justify-between ">
+    <div class="flex justify-between max-ss:flex-wrap max-ss:gap-5">
       <p class="font-extrabold text-2xl">
         Замена резины на джипах и паркетниках
       </p>
-      <p class="font-bold text-xl">
+      <p class="font-bold text-xl max-ss:m-auto">
         123 ₽
       </p>
     </div>
     <Divider class="border-[2px] my-[50px] border-primary2" />
-    <div class="flex justify-between ">
+    <div class="flex justify-between max-ss:flex-wrap max-ss:gap-5">
       <p class="font-extrabold text-2xl">
         Замена колес на дисках без балансировки
       </p>
-      <p class="font-bold text-xl">
+      <p class="font-bold text-xl max-ss:m-auto">
         123 ₽
       </p>
     </div>
     <Divider class="border-[2px] my-[50px] border-primary2" />
-    <div class="flex justify-between ">
+    <div class="flex justify-between max-ss:flex-wrap max-ss:gap-5">
       <p class="font-extrabold text-2xl">
         Замена колес на дисках с балансировкой
       </p>
-      <p class="font-bold text-xl">
+      <p class="font-bold text-xl max-ss:m-auto">
         123 ₽
       </p>
     </div>

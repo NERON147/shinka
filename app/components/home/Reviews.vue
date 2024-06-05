@@ -1,7 +1,7 @@
 <template>
-  <section class="bg-gray-200 pb-20">
+  <section id="reviews" class="bg-gray-200 pb-20">
     <div class="container">
-      <h2 class="text-5xl text-center font-extrabold mt-[100px] pt-20 mb-20">
+      <h2 class="max-sxxs:text-2xl max-sm:text-3xl max-md:text-4xl text-5xl text-center font-extrabold mt-[100px] pt-20 mb-20">
         РЕАЛЬНЫЕ ОТЗЫВЫ
       </h2>
       <Swiper
@@ -107,39 +107,23 @@ const data = reactive({
   breakpoints: {
     300: {
       slidesPerView: 1,
-      spaceBetween: -5
-    },
-    330: {
-      slidesPerView: 1,
-      spaceBetween: -10
-    },
-    365: {
-      slidesPerView: 1,
-      spaceBetween: -26
-    },
-    424: {
-      slidesPerView: 1,
-      spaceBetween: -50
-    },
-    450: {
-      slidesPerView: 1,
-      spaceBetween: -50
+      spaceBetween: 0
     },
     550: {
       slidesPerView: 1,
-      spaceBetween: -100
+      spaceBetween: 0
     },
     644: {
       slidesPerView: 1,
-      spaceBetween: -150
+      spaceBetween: 0
     },
     720: {
       slidesPerView: 2,
-      spaceBetween: -20
+      spaceBetween: 10
     },
     950: {
       slidesPerView: 2,
-      spaceBetween: -100
+      spaceBetween: 10
     },
     1085: {
       slidesPerView: 3,

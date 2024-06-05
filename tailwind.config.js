@@ -25,13 +25,15 @@ module.exports = {
       }
     },
     screens: {
+      sxxs: '350px',
       xxs: '410px',
       xs: '480px',
       ss: '620px',
-      sm: '768px',
+      sm: '770px',
       md: '1060px',
-      lg: '1400px',
-      xl: '1400px'
+      lg: '1450px',
+      xl: '1600px',
+      xxl: '5000px'
     }
   }
   // plugins: [
