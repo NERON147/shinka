@@ -3,14 +3,14 @@
     <h2 class="max-sxxs:text-2xl max-sm:text-3xl max-md:text-4xl text-5xl text-center font-extrabold mt-[100px]">
       НАШИ УСЛУГИ
     </h2>
-    <div class="flex gap-16 justify-center mt-20 max-ss:flex-wrap">
+    <div class="flex gap-16 max-xs:gap-10 justify-center mt-20 max-ss:flex-wrap">
       <div class="bg-[#262626] p-8 rounded-xl col-span-3 w-fit max-ss:w-full" @mouseover="data.hover = true" @mouseout="data.hover = false">
         <p class="mt-5 flex gap-2 items-center">
           <span class="text-gray-500 text-sm">
             01
           </span>
           <span class="font-bold text-2xl text-white">
-            Шиномонтаж R14-R22 <br>
+            Шиномонтаж R12-R24 <br>
           </span>
         </p>
         <div class="mt-2">
@@ -41,7 +41,7 @@
 
           <img src="/assets/img/kolesa-bez-diska.png" alt="kolesa-bez-diska" width="210" class="max-sm:ml-[15px] ml-[135px] max-ss:mt-10">
         </div>
-        <div class="bg-primary2 rounded-xl col-span-3 w-fit flex max-w-[700px] overflow-hidden max-ss:flex-wrap" @mouseover="data.hover = true" @mouseout="data.hover = false">
+        <div class="bg-primary2 rounded-xl col-span-3 max-xs:w-full w-fit flex max-w-[700px] overflow-hidden max-ss:flex-wrap" @mouseover="data.hover = true" @mouseout="data.hover = false">
           <div class="p-8">
             <p class="mt-5 flex gap-2 items-center">
               <span class="text-gray-500 text-sm">
@@ -58,11 +58,11 @@
             </div>
           </div>
 
-          <img src="/assets/img/klych.png" alt="klych" width="360" class="-mr-[10px]">
+          <img src="/assets/img/klych.png" alt="klych" width="360" class="max-xs:hidden -mr-[10px]">
         </div>
       </div>
     </div>
-    <div class="flex gap-16 justify-center max-ss:mt-10 mt-20 max-ss:flex-wrap">
+    <div class="flex gap-16 max-xs:gap-10 justify-center max-ss:mt-10 mt-20 max-ss:flex-wrap">
       <div class="flex flex-col gap-10">
         <div class="bg-[#f5f5f5] rounded-xl col-span-3 w-fit flex max-w-[700px] overflow-hidden" @mouseover="data.hover = true" @mouseout="data.hover = false">
           <div class="p-8">
@@ -83,7 +83,7 @@
 
           <img src="/assets/img/hranenenie.png" alt="hranenenie" width="350">
         </div>
-        <div class="bg-[#d4d4d4] rounded-xl col-span-3 w-fit flex max-w-[700px] overflow-hidden" @mouseover="data.hover = true" @mouseout="data.hover = false">
+        <div class="bg-[#d4d4d4] rounded-xl col-span-3 max-xs:w-full w-fit flex max-w-[700px] overflow-hidden" @mouseover="data.hover = true" @mouseout="data.hover = false">
           <div class="p-8">
             <p class="mt-5 flex gap-2 items-center">
               <span class="text-gray-500 text-sm">
@@ -100,7 +100,7 @@
             </div>
           </div>
 
-          <img src="/assets/img/perebortovka.png" alt="perebortovka" width="370" class="max-sm:ml-[15px] ml-[100px]">
+          <img src="/assets/img/perebortovka.png" alt="perebortovka" width="370" class="max-xs:hidden max-sm:ml-[15px] ml-[100px]">
         </div>
       </div>
       <div class="bg-[#262626] rounded-xl col-span-3 w-fit h-[440px] max-ss:h-[380px] max-ss:w-full relative" @mouseover="data.hover = true" @mouseout="data.hover = false">
@@ -141,7 +141,7 @@
           </div>
         </div>
 
-        <img src="/assets/img/sto.jpg" alt="sto" width="350" class="ml-auto">
+        <img src="/assets/img/sto.jpg" alt="sto" width="350" class="max-xs:hidden ml-auto">
       </div>
     </div>
   </section>

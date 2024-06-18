@@ -1,5 +1,5 @@
 <template>
-  <div class="p-5 bg-white rounded-xl h-[425px] flex flex-col">
+  <div class="p-5 bg-gray-100 rounded-xl h-[425px] flex flex-col">
     <div class="flex-grow">
       <p class="text-lg font-bold mb-8">
         {{ props.item.name }}
