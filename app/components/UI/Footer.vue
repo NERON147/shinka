@@ -38,6 +38,7 @@
             <Checkbox v-model="data.apply" input-id="box" :value="true" :invalid="v$.apply.$error" />
             <label for="box" class="ml-2"> Нажимая на кнопку "Оставить заявку", Вы подтверждаете, что ознакомлены с Политикой обработки и обеспечения безопасности персональных данных и даете свое согласие на обработку Персональных данных.
             </label>
+            <nuxt-link to="user-agreement">Политика конфиденциальности</nuxt-link>
           </div>
         </div>
       </div>

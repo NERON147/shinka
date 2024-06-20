@@ -1,84 +1,82 @@
 <template>
-  <article>
-    <header>
-      <section class="container">
-        <div class="py-5 flex justify-between items-center">
-          <img
-            src="/assets/img/logo.png"
-            alt="logo"
-            class="max-lg:w-[300px] max-sxxs:w-[250px]"
-          >
-          <div class="max-lg:hidden px-5 py-2 bg-[#a8a8a841] hover:bg-[#f1f1f1f3] rounded-lg fixed flex items-center justify-center right-0 left-0 w-fit m-auto transition-all z-10">
-            <ul class="flex gap-2.5 text-primary text-[14px] font-extrabold ">
-              <li
-                v-for="item in data.nav"
-                :key="item.name"
-                :class="item?.class ? item?.class : ''"
-                class="cursor-pointer hover:text-primary transition-all hover:scale-110"
-                @click="anhcorScroll(item.id)"
-              >
-                {{ item.name }}
-              </li>
-            </ul>
-          </div>
-          <div class="flex flex-col max-ss:hidden">
-            <span class="text-white font-light text-lg">
-              пн-пт: 09:00 - 20:00
-            </span>
-            <a
-              href="tel:+79999999999"
-              class="text-white text-xl font-bold"
+  <header>
+    <section class="container">
+      <div class="py-5 flex justify-between items-center">
+        <img
+          src="/assets/img/logo.png"
+          alt="logo"
+          class="max-lg:w-[300px] max-sxxs:w-[250px]"
+        >
+        <div class="max-lg:hidden px-5 py-2 bg-[#a8a8a841] hover:bg-[#f1f1f1f3] rounded-lg fixed flex items-center justify-center right-0 left-0 w-fit m-auto transition-all z-10">
+          <ul class="flex gap-2.5 text-primary text-[14px] font-extrabold ">
+            <li
+              v-for="item in data.nav"
+              :key="item.name"
+              :class="item?.class ? item?.class : ''"
+              class="cursor-pointer hover:text-primary transition-all hover:scale-110"
+              @click="anhcorScroll(item.id)"
             >
-              +7 (999) 999-99-99
-            </a>
-          </div>
-          <div id="menuToggle" class="lg:hidden block">
-            <input
-              id="checkbox"
-              type="checkbox"
-              :checked="data.isDropdownOpen"
-              @click="data.isDropdownOpen = !data.isDropdownOpen"
-            >
-            <label class="toggle" for="checkbox">
-              <div class="bar bar--top" />
-              <div class="bar bar--middle" />
-              <div class="bar bar--bottom" />
-            </label>
-            <transition name="fade">
-              <div v-if="data.isDropdownOpen" class="dropdown">
-                <transition-group
-                  name="fade"
-                  tag="ul"
-                  class="options-container"
-                >
-                  <li
-                    v-for="(link, index) in data.nav"
-                    :key="link.name"
-                    class="font-extrabold text-xl text-primary2"
-                    :style="{ animationDelay: `${index * 0.1}s` }"
-                    @click="anhcorScroll(link.id)"
-                  >
-                    {{ link.name }}
-                  </li>
-                  <div class="flex flex-col max-ss:flex ss:hidden">
-                    <span class="text-white font-light text-lg">
-                      пн-пт: 09:00 - 20:00
-                    </span>
-                    <a
-                      href="tel:+79999999999"
-                      class="text-white font-bold text-xl"
-                    >
-                      +7 (999) 999-99-99
-                    </a>
-                  </div>
-                </transition-group>
-              </div>
-            </transition>
-          </div>
+              {{ item.name }}
+            </li>
+          </ul>
         </div>
-      </section>
-    </header>
-  </article>
+        <div class="flex flex-col max-ss:hidden">
+          <span class="text-white font-light text-lg">
+            пн-пт: 09:00 - 20:00
+          </span>
+          <a
+            href="tel:+79999999999"
+            class="text-white text-xl font-bold"
+          >
+            +7 (999) 999-99-99
+          </a>
+        </div>
+        <div id="menuToggle" class="lg:hidden block">
+          <input
+            id="checkbox"
+            type="checkbox"
+            :checked="data.isDropdownOpen"
+            @click="data.isDropdownOpen = !data.isDropdownOpen"
+          >
+          <label class="toggle" for="checkbox">
+            <div class="bar bar--top" />
+            <div class="bar bar--middle" />
+            <div class="bar bar--bottom" />
+          </label>
+          <transition name="fade">
+            <div v-if="data.isDropdownOpen" class="dropdown">
+              <transition-group
+                name="fade"
+                tag="ul"
+                class="options-container"
+              >
+                <li
+                  v-for="(link, index) in data.nav"
+                  :key="link.name"
+                  class="font-extrabold text-xl text-primary2"
+                  :style="{ animationDelay: `${index * 0.1}s` }"
+                  @click="anhcorScroll(link.id)"
+                >
+                  {{ link.name }}
+                </li>
+                <div class="flex flex-col max-ss:flex ss:hidden">
+                  <span class="text-white font-light text-lg">
+                    пн-пт: 09:00 - 20:00
+                  </span>
+                  <a
+                    href="tel:+79999999999"
+                    class="text-white font-bold text-xl"
+                  >
+                    +7 (999) 999-99-99
+                  </a>
+                </div>
+              </transition-group>
+            </div>
+          </transition>
+        </div>
+      </div>
+    </section>
+  </header>
 </template>
 
 <script setup lang="ts">
