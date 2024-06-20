@@ -35,8 +35,8 @@
             @click="sendMessage"
           />
           <div class="flex align-items-center mt-10">
-            <Checkbox v-model="data.apply" input-id="ingredient1" name="pizza" value="Cheese" />
-            <label for="ingredient1" class="ml-2"> Нажимая на кнопку "Оставить заявку", Вы подтверждаете, что ознакомлены с Политикой обработки и обеспечения безопасности персональных данных и даете свое согласие на обработку Персональных данных.
+            <Checkbox v-model="data.apply" input-id="box" :value="true" :invalid="v$.apply.$error" />
+            <label for="box" class="ml-2"> Нажимая на кнопку "Оставить заявку", Вы подтверждаете, что ознакомлены с Политикой обработки и обеспечения безопасности персональных данных и даете свое согласие на обработку Персональных данных.
             </label>
           </div>
         </div>
@@ -62,17 +62,22 @@ const data = reactive({
   loader: false
 })
 
+const isTrue = (value: any) => value.includes(true)
+
 const rules = {
   name: { required },
-  phone: { required }
+  phone: { required },
+  apply: { required, isTrue }
 }
 
 const v$ = useVuelidate(rules, data)
 
 const sendMessage = async () => {
   v$.value.$validate()
-  if (v$.value.$error) {
+  if (v$.value.name.$error || v$.value.phone.$error) {
     toast.add({ severity: 'error', summary: 'Ошибка!', detail: 'Заполните все обязатльные поля!', group: 'bl', life: 6000 })
+  } else if (v$.value.apply.$error) {
+    toast.add({ severity: 'warn', summary: 'Внимание!', detail: 'Ознакомьтесь и поставьте галочку, что Вы ознакомлены с Политикой обработки персональных данных', group: 'bl', life: 6000 })
   } else {
     data.loader = true
     const orderToTG = `
@@ -89,6 +94,7 @@ const sendMessage = async () => {
       .then(() => {
         data.name = ''
         data.phone = ''
+        data.apply = false
         v$.value.$reset()
         data.loader = false
         toast.add({ severity: 'success', summary: 'Успешно!', detail: 'Заявка отправлена успешно, в ближайшее время наш сотрудник Вам перезвонит, спасибо за доверие!', group: 'bl', life: 6000 })
