@@ -24,6 +24,7 @@
             label="Оставить заявку"
             class="bg-[#b87a3c] border-[#b87a3c] h-12 hover:bg-[#946435] hover:border-[#946435] max-ss:w-full w-[500px]"
             plain
+            @click="sendMessage"
           />
           <div class="flex align-items-center mt-10">
             <Checkbox v-model="data.apply" input-id="ingredient1" name="pizza" value="Cheese" />
@@ -40,11 +41,32 @@
 </template>
 
 <script setup lang="ts">
+import axios from 'axios'
 const data = reactive({
   name: '',
   phone: '',
   apply: false
 })
+
+const sendMessage = async () => {
+  const orderToTG = `
+  <b> Новая заявка: </b> \n
+  <b> Имя: </b>  ${data.name}
+  <b> Телефон: </b>  ${data.phone} \n 
+  `
+  const chatId = '-1002238302043'
+  await axios.post('https://api.telegram.org/bot7282294081:AAFefQZH9b4CxTQeUv1RPbIBduUnoqTbrVk/sendMessage', {
+    chat_id: chatId,
+    parse_mode: 'html',
+    text: orderToTG
+  })
+    .then(() => {
+      console.log('norm')
+    })
+    .catch((err) => {
+      console.log(err)
+    })
+}
 </script>
 
 <style scoped>
