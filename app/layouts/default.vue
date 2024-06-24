@@ -1,9 +1,9 @@
 <template>
-  <NuxtLayout>
+  <div>
     <Header />
-    <NuxtPage />
+    <slot />
     <Footer />
-  </NuxtLayout>
+  </div>
 </template>
 
 <script setup>

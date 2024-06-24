@@ -53,9 +53,7 @@ import Reviews from '~/app/components/home/Reviews.vue'
 import FAQ from '~/app/components/home/FAQ.vue'
 import FindUs from '~/app/components/home/FindUs.vue'
 import { scrollToTop, scrollToBottom } from '@/app/helpers/scrollTo'
-definePageMeta({
-  layout: 'default'
-})
+
 </script>
 
 <style scoped></style>

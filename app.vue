@@ -1,13 +1,15 @@
 <template>
-  <NuxtLayout>
+  <div>
     <NuxtLoadingIndicator
       :color="'#b12d5d'"
       :height="3"
       :duration="1000"
       :throttle="0"
     />
-    <NuxtPage />
-  </NuxtLayout>
+    <NuxtLayout>
+      <NuxtPage />
+    </NuxtLayout>
+  </div>
 </template>
 
 <script setup>
