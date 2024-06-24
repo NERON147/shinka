@@ -1,12 +1,15 @@
 <template>
   <header>
     <section class="container">
-      <div class="py-5 flex justify-between items-center">
-        <img
-          src="/assets/img/logo.png"
-          alt="logo"
-          class="max-lg:w-[300px] max-sxxs:w-[250px]"
-        >
+      <div class="p-5 flex justify-between items-center bg-[#acacacc5] rounded-lg mt-5">
+        <nuxt-link to="/">
+          <img
+            src="/assets/img/logo.png"
+            alt="logo"
+            class="max-lg:w-[300px] max-sxxs:w-[250px]"
+          >
+        </nuxt-link>
+
         <div class="max-lg:hidden px-5 py-2 bg-[#a8a8a841] hover:bg-[#505050f3] rounded-lg fixed flex items-center justify-center right-0 left-0 w-fit m-auto transition-all z-10">
           <ul class="flex gap-2.5 text-primary text-[14px] font-extrabold ">
             <li
@@ -14,7 +17,7 @@
               :key="item.name"
               :class="item?.class ? item?.class : ''"
               class="cursor-pointer hover:text-primary transition-all hover:scale-110"
-              @click="anhcorScroll(item.id)"
+              :to="item.to"
             >
               {{ item.name }}
             </li>
@@ -50,15 +53,15 @@
                 tag="ul"
                 class="options-container"
               >
-                <li
+                <nuxt-link
                   v-for="(link, index) in data.nav"
                   :key="link.name"
                   class="font-extrabold text-xl text-primary2"
                   :style="{ animationDelay: `${index * 0.1}s` }"
-                  @click="anhcorScroll(link.id)"
+                  :to="link.to"
                 >
                   {{ link.name }}
-                </li>
+                </nuxt-link>
                 <div class="flex flex-col max-ss:flex ss:hidden">
                   <span class="text-white font-light text-lg">
                     пн-пт: 09:00 - 20:00
@@ -84,58 +87,32 @@ const data = reactive({
   isDropdownOpen: false,
   nav: [
     {
-      name: 'СПЕЦПРЕДЛОЖЕНИЯ',
-      id: 'special'
+      name: 'ШИНОМОНТАЖ',
+      to: 'shinomotaj'
     },
     {
-      name: 'ПОЧЕМУ МЫ?',
-      id: 'why'
+      name: 'ПРОДАЖА РЕЗИНЫ',
+      to: 'why'
     },
     {
-      name: 'НАШИ УСЛУГИ',
-      id: 'services'
+      name: 'БАЛАНСИРОВКА',
+      to: 'services'
     },
     {
-      name: 'ЦЕНЫ',
-      id: 'prices',
+      name: 'ХРАНЕНИЕ',
+      to: 'prices',
       class: 'underline underline-offset-4'
     },
     {
-      name: 'РЕАЛЬНЫЕ ОТЗЫВЫ',
-      id: 'reviews'
+      name: 'РЕМОНТ ДИСКОВ',
+      to: 'reviews'
     },
     {
-      name: 'FAQ',
-      id: 'FAQ'
-    },
-    {
-      name: 'КАК НАС НАЙТИ',
-      id: 'find'
+      name: 'СТО',
+      to: 'FAQ'
     }
   ]
 })
-
-const anhcorScroll = (anchor: string) => {
-  if (process.client) {
-    const targetElement = document.getElementById(anchor)
-    data.isDropdownOpen = false
-    if (targetElement) {
-      const offset = 180
-      const targetPosition =
-        targetElement.getBoundingClientRect().top + window.pageYOffset - offset
-
-      window.scroll({
-        top: targetPosition,
-        behavior: 'smooth'
-      })
-    } else {
-      window.scroll({
-        top: 0,
-        behavior: 'smooth'
-      })
-    }
-  }
-}
 </script>
 
 <style>

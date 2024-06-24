@@ -7,42 +7,48 @@
       <p class="text-nowrap font-extrabold text-2xl">
         Замена резины
       </p>
-      <div class="grid grid-cols-12 w-full font-bold text-xl max-ss:text-[16px]">
-        <p class="col-span-2 text-center">
+      <div class="grid grid-cols-7 w-full font-bold text-xl max-ss:text-[16px]">
+        <p class="col-span-1 text-center">
           R 14-15
         </p>
-        <p class="col-span-2 text-center">
+        <p class="col-span-1 text-center">
           R 16
         </p>
-        <p class="col-span-2 text-center">
+        <p class="col-span-1 text-center">
           R 17
         </p>
-        <p class="col-span-2 text-center">
+        <p class="col-span-1 text-center">
           R 18
         </p>
-        <p class="col-span-2 text-center">
+        <p class="col-span-1 text-center">
           R 19
         </p>
-        <p class="col-span-2 text-center">
+        <p class="col-span-1 text-center">
           R 20-21
         </p>
-        <Divider class="col-span-12 border-[1px]" />
-        <p class="col-span-2 text-center">
+        <p class="col-span-1 text-center">
+          R 22-24
+        </p>
+        <Divider class="col-span-7 border-[1px]" />
+        <p class="col-span-1 text-center">
           123 ₽
         </p>
-        <p class="col-span-2 text-center">
+        <p class="col-span-1 text-center">
           123 ₽
         </p>
-        <p class="col-span-2 text-center">
+        <p class="col-span-1 text-center">
           123 ₽
         </p>
-        <p class="col-span-2 text-center">
+        <p class="col-span-1 text-center">
           123 ₽
         </p>
-        <p class="col-span-2 text-center">
+        <p class="col-span-1 text-center">
           123 ₽
         </p>
-        <p class="col-span-2 text-center">
+        <p class="col-span-1 text-center">
+          123 ₽
+        </p>
+        <p class="col-span-1 text-center">
           123 ₽
         </p>
       </div>

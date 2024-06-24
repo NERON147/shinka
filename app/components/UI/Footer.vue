@@ -1,6 +1,6 @@
 <template>
   <section class="bg-gradient-to-r from-black to-slate-900 relative">
-    <div class="container text-white flex max-sxxs:h-full h-[694px]">
+    <div class="container text-white flex max-sxxs:h-full h-fit">
       <div class="max-md:w-full w-1/2">
         <h2 class="max-ss:text-2xl text-5xl font-extrabold pt-20 tracking-wide leading-[70px]">
           БАННЕР С ВЫГОДНЫМ <br>
@@ -34,11 +34,11 @@
             :loading="data.loader"
             @click="sendMessage"
           />
+          <nuxt-link to="user-agreement" class="text-nowrap mt-auto underline underline-offset-2">Политика конфиденциальности</nuxt-link>
           <div class="flex align-items-center mt-10">
             <Checkbox v-model="data.apply" input-id="box" :value="true" :invalid="v$.apply.$error" />
             <label for="box" class="ml-2"> Нажимая на кнопку "Оставить заявку", Вы подтверждаете, что ознакомлены с Политикой обработки и обеспечения безопасности персональных данных и даете свое согласие на обработку Персональных данных.
             </label>
-            <nuxt-link to="user-agreement">Политика конфиденциальности</nuxt-link>
           </div>
         </div>
       </div>
