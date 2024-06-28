@@ -2,7 +2,6 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   app: {
-    baseURL: '/shinka/',
     pageTransition: { name: 'page', mode: 'out-in' },
     layoutTransition: { name: 'layout', mode: 'out-in' },
     head: {
@@ -11,9 +10,6 @@ export default defineNuxtConfig({
       title: 'Wheel Garage',
       link: [{ rel: 'icon', type: 'image/ico', href: '/assets/img/favicon.ico' }]
     }
-  },
-  nitro: {
-    preset: 'github-pages'
   },
   modules: ['@nuxtjs/tailwindcss', 'nuxt-primevue', 'nuxt-swiper'],
   primevue: {
