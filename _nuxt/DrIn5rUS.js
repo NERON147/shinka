@@ -1,0 +1,1 @@
+import{_ as o}from"./17p2Y9Jj.js";import{d as t,z as r,A as e,B as m}from"./CxN6mAk7.js";import"./DljULfpx.js";import"./B-ZM2O-w.js";import"./DiCHpaiP.js";import"./BBbmZKV-.js";import"./B-Vpa7GQ.js";import"./CPUF7dCp.js";import"./B7gVpyvv.js";import"./CkVg9ABx.js";const k=t({__name:"index",setup(p){return(a,i)=>(r(),e("main",null,[m(o,{class:"!mb-10"})]))}});export{k as default};
