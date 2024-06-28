@@ -1,0 +1,1 @@
+const s=t=>{{const o=document.getElementById(t);if(o){const e=o.getBoundingClientRect().top+window.pageYOffset-180;window.scroll({top:e,behavior:"smooth"})}else window.scroll({top:0,behavior:"smooth"})}};export{s as a};
