@@ -85,13 +85,14 @@
         label="Оставить заявку"
         class="bg-[#b87a3c] border-[#b87a3c] h-12 hover:bg-[#946435] hover:border-[#946435]"
         plain
+        @click="anhcorScroll('footer')"
       />
     </div>
   </section>
 </template>
 
 <script setup lang="ts">
-
+import { anhcorScroll } from '@/app/helpers/anhcorScroll'
 </script>
 
 <style scoped>

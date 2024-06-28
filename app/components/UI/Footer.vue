@@ -42,7 +42,7 @@
           </div>
         </div>
       </div>
-      <div>
+      <div id="footer">
         <img src="/assets/img/shina.png" alt="" class="absolute right-0 top-0 max-md:hidden">
       </div>
     </div>

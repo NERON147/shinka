@@ -19,6 +19,7 @@
             label="Оставить заявку"
             class="bg-[#b87a3c] border-[#b87a3c] h-12 hover:bg-[#946435] hover:border-[#946435] max-ss:w-full"
             plain
+            @click="anhcorScroll('footer')"
           />
           <Button
             label="Написать в Whatsapp"
@@ -53,7 +54,7 @@ import Reviews from '~/app/components/home/Reviews.vue'
 import FAQ from '~/app/components/home/FAQ.vue'
 import FindUs from '~/app/components/home/FindUs.vue'
 import { scrollToTop, scrollToBottom } from '@/app/helpers/scrollTo'
-
+import { anhcorScroll } from '@/app/helpers/anhcorScroll'
 </script>
 
 <style scoped></style>

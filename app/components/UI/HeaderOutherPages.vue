@@ -15,11 +15,11 @@
             <li
               v-for="item in data.nav"
               :key="item.name"
-              :class="item?.class ? item?.class : ''"
               class="cursor-pointer hover:text-primary transition-all hover:scale-110"
-              :to="item.to"
             >
-              {{ item.name }}
+              <nuxt-link :to="item.to">
+                {{ item.name }}
+              </nuxt-link>
             </li>
           </ul>
         </div>
@@ -53,15 +53,20 @@
                 tag="ul"
                 class="options-container"
               >
-                <nuxt-link
+                <li
                   v-for="(link, index) in data.nav"
                   :key="link.name"
                   class="font-extrabold text-xl text-primary2"
                   :style="{ animationDelay: `${index * 0.1}s` }"
-                  :to="link.to"
+                  @click="data.isDropdownOpen = !data.isDropdownOpen"
                 >
-                  {{ link.name }}
-                </nuxt-link>
+                  <nuxt-link
+                    :to="link.to"
+                  >
+                    {{ link.name }}
+                  </nuxt-link>
+                </li>
+
                 <div class="flex flex-col max-ss:flex ss:hidden">
                   <span class="text-white font-light text-lg">
                     пн-пт: 09:00 - 20:00
@@ -92,24 +97,27 @@ const data = reactive({
     },
     {
       name: 'ПРОДАЖА РЕЗИНЫ',
-      to: 'why'
+      to: 'prodaja-reziny'
     },
     {
       name: 'БАЛАНСИРОВКА',
-      to: 'services'
+      to: 'balansyrovka'
     },
     {
       name: 'ХРАНЕНИЕ',
-      to: 'prices',
-      class: 'underline underline-offset-4'
+      to: 'khranenie-shin'
+    },
+    {
+      name: 'ПЕРЕБОРТОВКА',
+      to: 'perebortovka-koles'
     },
     {
       name: 'РЕМОНТ ДИСКОВ',
-      to: 'reviews'
+      to: 'remont-diskov'
     },
     {
       name: 'СТО',
-      to: 'FAQ'
+      to: 'sto'
     }
   ]
 })

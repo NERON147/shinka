@@ -55,7 +55,7 @@
                   :key="link.name"
                   class="font-extrabold text-xl text-primary2"
                   :style="{ animationDelay: `${index * 0.1}s` }"
-                  @click="anhcorScroll(link.id)"
+                  @click="anhcorScroll(link.id); data.isDropdownOpen = !data.isDropdownOpen"
                 >
                   {{ link.name }}
                 </li>
@@ -80,6 +80,7 @@
 </template>
 
 <script setup lang="ts">
+import { anhcorScroll } from '@/app/helpers/anhcorScroll'
 const data = reactive({
   isDropdownOpen: false,
   nav: [
@@ -115,27 +116,6 @@ const data = reactive({
   ]
 })
 
-const anhcorScroll = (anchor: string) => {
-  if (process.client) {
-    const targetElement = document.getElementById(anchor)
-    data.isDropdownOpen = false
-    if (targetElement) {
-      const offset = 180
-      const targetPosition =
-        targetElement.getBoundingClientRect().top + window.pageYOffset - offset
-
-      window.scroll({
-        top: targetPosition,
-        behavior: 'smooth'
-      })
-    } else {
-      window.scroll({
-        top: 0,
-        behavior: 'smooth'
-      })
-    }
-  }
-}
 </script>
 
 <style>

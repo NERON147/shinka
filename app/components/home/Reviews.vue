@@ -33,6 +33,7 @@
           label="Оставить отзыв"
           class="bg-[#b87a3c] border-[#b87a3c] h-12 hover:bg-[#946435] hover:border-[#946435]"
           plain
+          @click="anhcorScroll('footer')"
         />
       </div>
     </div>
@@ -40,6 +41,7 @@
 </template>
 
 <script setup>
+import { anhcorScroll } from '@/app/helpers/anhcorScroll'
 import ReviewsCard from '~/app/components/home/UI/Reviews/ReviewsCard.vue'
 const data = reactive({
   reviews: [

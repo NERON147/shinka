@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <main>
     <Price class="!mb-10" />
-  </div>
+  </main>
 </template>
 
 <script setup lang="ts">
