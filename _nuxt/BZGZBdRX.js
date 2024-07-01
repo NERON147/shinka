@@ -1,0 +1,1 @@
+import"./CT17CLMx.js";import{_ as e}from"./BOmI3XsD.js";import{d as o,z as t,A as a,U as r}from"./TXeigpji.js";import"./C3qMIYRv.js";import"./CkVg9ABx.js";const f=o({__name:"index",setup(m){return(n,s)=>(t(),a("main",null,[r(e,{class:"!mb-10"})]))}});export{f as default};
