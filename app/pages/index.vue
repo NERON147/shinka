@@ -1,7 +1,7 @@
 <template>
   <article>
     <section class="">
-      <div class="absolute top-0 left-0 w-full h-screen bg-cover bg-no-repeat bg-center -z-10" style="background-image: url('/assets/img/manwheel.png');" />
+      <img src="/assets/img/manwheel.png" class="absolute top-0 left-0 w-full h-screen object-cover -z-10" alt="Image description">
       <div class="container">
         <h1>
           <div class="text-white max-sxxs:text-[25px] max-ss:text-[30px] max-ss:font-extrabold max-sm:text-[50px] max-md:text-[60px] text-[70px] font-bold mt-32 max-ss:leading-[50px] max-sm:leading-[60px] max-md:leading-[75px] leading-[90px]">
