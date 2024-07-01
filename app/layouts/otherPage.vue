@@ -2,7 +2,6 @@
   <div>
     <HeaderOutherPages />
     <slot />
-    <Footer />
   </div>
 </template>
 

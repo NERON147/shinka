@@ -1,7 +1,7 @@
 <template>
-  <header>
+  <header class="fixed top-0 w-full z-50">
     <section class="container">
-      <div class="p-5 flex justify-between items-center bg-[#acacacc5] rounded-lg mt-5">
+      <div class="p-5 flex justify-between items-center backdrop-blur-[4px] rounded-lg mt-5">
         <nuxt-link to="/">
           <img
             src="/assets/img/logo.png"
@@ -10,7 +10,7 @@
           >
         </nuxt-link>
 
-        <div class="max-lg:hidden px-5 py-2 bg-[#a8a8a841] hover:bg-[#505050f3] rounded-lg fixed flex items-center justify-center right-0 left-0 w-fit m-auto transition-all z-10">
+        <div class="max-lg:hidden px-5 py-2 bg-[#a8a8a841] rounded-lg fixed flex items-center justify-center right-0 left-0 w-fit m-auto transition-all z-10">
           <ul class="flex gap-2.5 text-primary text-[14px] font-extrabold ">
             <li
               v-for="item in data.nav"
@@ -24,17 +24,17 @@
           </ul>
         </div>
         <div class="flex flex-col max-ss:hidden">
-          <span class="text-white font-light text-lg">
+          <span class="text-black font-light text-lg">
             пн-пт: 09:00 - 20:00
           </span>
           <a
             href="tel:+79999999999"
-            class="text-white text-xl font-bold"
+            class="text-black text-xl font-bold"
           >
             +7 (999) 999-99-99
           </a>
         </div>
-        <div id="menuToggle" class="lg:hidden block">
+        <div id="menuToggle" class="lg:hidden block mr-2">
           <input
             id="checkbox"
             type="checkbox"
@@ -68,12 +68,12 @@
                 </li>
 
                 <div class="flex flex-col max-ss:flex ss:hidden">
-                  <span class="text-white font-light text-lg">
+                  <span class="text-black font-light text-lg">
                     пн-пт: 09:00 - 20:00
                   </span>
                   <a
                     href="tel:+79999999999"
-                    class="text-white font-bold text-xl"
+                    class="text-black font-bold text-xl"
                   >
                     +7 (999) 999-99-99
                   </a>

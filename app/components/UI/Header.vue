@@ -1,13 +1,13 @@
 <template>
-  <header>
+  <header class="fixed top-2 w-full z-50">
     <section class="container">
-      <div class="py-5 flex justify-between items-center">
+      <div class="py-5 flex justify-between items-center backdrop-blur-[4px] rounded-lg">
         <img
           src="/assets/img/logo.png"
           alt="logo"
           class="max-lg:w-[300px] max-sxxs:w-[250px]"
         >
-        <div class="max-lg:hidden px-5 py-2 bg-[#a8a8a841] hover:bg-[#505050f3] rounded-lg fixed flex items-center justify-center right-0 left-0 w-fit m-auto transition-all z-10">
+        <div class="max-lg:hidden px-5 py-2 rounded-lg fixed bg-[#a8a8a841] flex items-center justify-center right-0 left-0 w-fit m-auto transition-all z-10">
           <ul class="flex gap-2.5 text-primary text-[14px] font-extrabold ">
             <li
               v-for="item in data.nav"
@@ -21,17 +21,17 @@
           </ul>
         </div>
         <div class="flex flex-col max-ss:hidden">
-          <span class="text-white font-light text-lg">
+          <span class="text-primary font-light text-lg">
             пн-пт: 09:00 - 20:00
           </span>
           <a
             href="tel:+79999999999"
-            class="text-white text-xl font-bold"
+            class="text-primary text-xl font-bold"
           >
             +7 (999) 999-99-99
           </a>
         </div>
-        <div id="menuToggle" class="lg:hidden block">
+        <div id="menuToggle" class="lg:hidden block mr-2">
           <input
             id="checkbox"
             type="checkbox"

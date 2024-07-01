@@ -1,6 +1,6 @@
 <template>
   <main class="container">
-    <h1 class="font-bold text-4xl mt-10 text-center">
+    <h1 class="font-bold text-4xl mt-40 text-center">
       Продажа резины
     </h1>
     <img src="/assets/img/noviye-shiny.jpg" alt="" class="rounded-3xl max-sm:h-auto h-[400px] w-auto m-auto my-10">

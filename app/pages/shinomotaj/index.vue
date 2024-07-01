@@ -1,6 +1,6 @@
 <template>
   <main>
-    <Price class="!mb-10" />
+    <Price class="!mb-10 !mt-40" />
   </main>
 </template>
 
