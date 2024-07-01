@@ -9,10 +9,13 @@
     <NuxtLayout>
       <NuxtPage />
     </NuxtLayout>
+    <Footer />
   </div>
 </template>
 
 <script setup>
+import Footer from '~/app/components/UI/Footer.vue'
+
 </script>
 
 <style>

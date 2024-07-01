@@ -1,6 +1,7 @@
 <template>
   <article>
-    <section class="bg-img">
+    <section class="">
+      <div class="bg-img" />
       <div class="container">
         <h1>
           <div class="text-white max-sxxs:text-[25px] max-ss:text-[30px] max-ss:font-extrabold max-sm:text-[50px] max-md:text-[60px] text-[70px] font-bold mt-32 max-ss:leading-[50px] max-sm:leading-[60px] max-md:leading-[75px] leading-[90px]">
