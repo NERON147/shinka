@@ -23,7 +23,7 @@
         </div>
       </nuxt-link>
 
-      <div class="flex flex-col gap-10">
+      <div class="flex flex-col gap-10 mt-3 max-ss:mt-0">
         <nuxt-link to="prodaja-reziny">
           <div class="bg-[#f5f5f5] p-8 rounded-xl col-span-3 w-fit flex max-w-[700px] max-ss:flex-wrap cursor-pointer" @mouseover="hover[1] = true" @mouseout="hover[1] = false">
             <div>
@@ -116,7 +116,7 @@
       </div>
       <nuxt-link to="remont-diskov">
         <div class="bg-[#262626] rounded-xl col-span-3 w-fit h-[440px] max-ss:h-[380px] max-ss:w-full relative cursor-pointer" @mouseover="hover[5] = true" @mouseout="hover[5] = false">
-          <div class="px-[75px] py-[20px]">
+          <div class="px-[75px] py-[20px] max-ss:pl-[20px] max-ss:pr-[175px] w-full">
             <p class="mt-5 flex gap-2 items-center">
               <span class="text-gray-500 text-sm">
                 06

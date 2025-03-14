@@ -1,7 +1,7 @@
 <template>
   <section id="special" class="container">
     <div class="max-ss:mt-[200px] max-md:mt-[300px] mt-[250px]">
-      <h2 class="max-sxxs:text-2xl max-sm:text-3xl max-md:text-4xl text-5xl text-center font-extrabold">
+      <h2 class="max-sxxs:text-2xl max-sm:text-3xl max-md:text-4xl text-5xl text-center font-extrabold text-[#b87a3c]">
         СПЕЦПРЕДЛОЖЕНИЯ
       </h2>
       <div class="flex mt-20 justify-center gap-20 max-sm:flex-wrap">
@@ -18,9 +18,9 @@
             </p><p class="text-white text-xl mt-5 text-shadow">
               при покупке комплекта <br> шин или дисков
             </p>
-            <p class="text-white text-xl mt-5 flex gap-3 items-center text-shadow transition-all" :class="{'text-primary': data.hover}">
+            <!-- <p class="text-white text-xl mt-5 flex gap-3 items-center text-shadow transition-all" :class="{'text-primary': data.hover}">
               Подробнее <ArrowLongRightIcon class="h-8 transition-all" :class="{'translate-x-7': data.hover}" />
-            </p>
+            </p> -->
           </h3>
         </div>
         <div class="max-xxs:w-full w-[600px] h-[400px] relative max-sxxs:pt-[30px] max-xxs:pt-[50px] pt-[100px] p-[30px] rounded-lg cursor-pointer" @mouseover="data.hover2 = true" @mouseout="data.hover2 = false">
@@ -36,11 +36,11 @@
               </span>
             </p><p class="text-white text-xl max-md:mt-2 mt-5 text-shadow">
               <br>
-              c 1 марта по 30 июня 2024 г.
+              c 1 марта по 30 июня 2025 г.
             </p>
-            <p class="text-white text-xl mt-5 flex gap-3 items-center text-shadow transition-all" :class="{'text-primary': data.hover2}">
+            <!-- <p class="text-white text-xl mt-5 flex gap-3 items-center text-shadow transition-all" :class="{'text-primary': data.hover2}">
               Подробнее <ArrowLongRightIcon class="h-8 transition-all" :class="{'translate-x-7': data.hover2}" />
-            </p>
+            </p> -->
           </h3>
         </div>
       </div>
@@ -49,7 +49,7 @@
 </template>
 
 <script setup lang="ts">
-import { ArrowLongRightIcon } from '@heroicons/vue/24/outline'
+// import { ArrowLongRightIcon } from '@heroicons/vue/24/outline'
 
 const data = reactive({
   hover: false,

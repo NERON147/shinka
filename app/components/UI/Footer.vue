@@ -1,15 +1,9 @@
 <template>
-  <section class="bg-gradient-to-r from-black to-slate-900 relative">
-    <div class="container text-white flex max-sxxs:h-full h-fit">
+  <section class="bg-gradient-to-r from-black to-slate-900 relative h-[696px] max-ss:h-auto">
+    <div class="container text-white flex max-sxxs:h-full h-full items-center">
       <div class="max-md:w-full w-1/2">
-        <h2 class="max-ss:text-2xl text-5xl font-extrabold pt-20 tracking-wide leading-[70px]">
-          БАННЕР С ВЫГОДНЫМ <br>
-          <span class="text-primary">
-            ПРЕДЛОЖЕНИЕМ
-          </span>
-        </h2>
         <p class="max-ss:text-xl text-2xl mt-10">
-          Оставьте заявку или позвоните прямо сейчас
+          Оставьте заявку или <a :href="'tel:+79046474725'" class="text-[#b87a3c]" @click="sendMessageCall">позвоните</a>  прямо сейчас
         </p>
         <div class="mt-10 flex flex-col gap-5">
           <FloatLabel>
@@ -34,7 +28,7 @@
             :loading="data.loader"
             @click="sendMessage"
           />
-          <nuxt-link to="user-agreement" class="text-nowrap mt-auto underline underline-offset-2">Политика конфиденциальности</nuxt-link>
+          <nuxt-link to="privacy" class="text-nowrap mt-auto underline underline-offset-2">Политика конфиденциальности</nuxt-link>
           <div class="flex align-items-center mt-10">
             <Checkbox v-model="data.apply" input-id="box" :value="true" :invalid="v$.apply.$error" />
             <label for="box" class="ml-2"> Нажимая на кнопку "Оставить заявку", Вы подтверждаете, что ознакомлены с Политикой обработки и обеспечения безопасности персональных данных и даете свое согласие на обработку Персональных данных.
@@ -55,6 +49,10 @@ import axios from 'axios'
 import { useToast } from 'primevue/usetoast'
 import { useVuelidate } from '@vuelidate/core'
 import { required } from '@vuelidate/validators'
+import { useSendToTg } from '~/app/composables/useSendToTg'
+
+const { sendMessageCall } = useSendToTg()
+
 const toast = useToast()
 const data = reactive({
   name: '',

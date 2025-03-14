@@ -24,14 +24,16 @@
           </ul>
         </div>
         <div class="flex flex-col max-ss:hidden">
-          <span class="text-black font-light text-lg">
-            пн-пт: 09:00 - 20:00
+          <span class="font-light text-lg">
+            пн-пт: <span class="">10:00 - 19:00</span>
+            сб: <span class="">10:00 - 15:00</span>
           </span>
           <a
-            href="tel:+79999999999"
-            class="text-black text-xl font-bold"
+            href="tel:+79046474725"
+            class="text-xl font-bold text-center"
+            @click="sendMessageCall"
           >
-            +7 (999) 999-99-99
+            +7 (904) 647-47-25
           </a>
         </div>
         <div id="menuToggle" class="lg:hidden block mr-2">
@@ -72,10 +74,11 @@
                     пн-пт: 09:00 - 20:00
                   </span>
                   <a
-                    href="tel:+79999999999"
-                    class="text-black font-bold text-xl"
+                    href="tel:+79046474725"
+                    class="text-xl font-bold text-center"
+                    @click="sendMessageCall"
                   >
-                    +7 (999) 999-99-99
+                    +7 (904) 647-47-25
                   </a>
                 </div>
               </transition-group>
@@ -88,6 +91,11 @@
 </template>
 
 <script setup lang="ts">
+
+import { useSendToTg } from '~/app/composables/useSendToTg'
+
+const { sendMessageCall } = useSendToTg()
+
 const data = reactive({
   isDropdownOpen: false,
   nav: [

@@ -11,11 +11,11 @@
             </span> <br> АВТОМОБИЛЕЙ В ГАТЧИНЕ
           </div>
           <div class="text-white font-light text-2xl tracking-[3px] mt-10">
-            Полный комплекс шиномонтажных <br>
+            Полный комплекс <span class="text-[#e69443] font-extrabold cursor-pointer" @click="anhcorScroll('prices')">шиномонтажных </span> и <nuxt-link to="sto"><span class="text-[#e69443] font-extrabold">СТО</span> </nuxt-link>  <br>
             работ от профессионалов
           </div>
         </h1>
-        <div class="mt-24 flex gap-10 !font-light max-ss:flex-wrap">
+        <div class="mt-24 flex gap-10 max-ss:gap-5 !font-light max-ss:flex-wrap">
           <Button
             label="Оставить заявку"
             class="bg-[#b87a3c] border-[#b87a3c] h-12 hover:bg-[#946435] hover:border-[#946435] max-ss:w-full"
@@ -23,10 +23,19 @@
             @click="anhcorScroll('footer')"
           />
           <Button
-            label="Написать в Whatsapp"
-            class="text-white border-white h-12 hover:border-[#bbbbbb] max-ss:w-full"
+            class="text-white border-white h-12 hover:border-[#bbbbbb] max-ss:w-fit max-ss:mx-auto max-ss:mt-5"
             outlined
-          />
+            @click="openWhatsUp"
+          >
+            Написать в Whatsapp <img src="/assets/img/wh.svg" alt="" class="ml-2  w-[25px]">
+          </Button>
+          <Button
+            class="text-white border-white h-12 hover:border-[#bbbbbb] max-ss:w-fit max-ss:mx-auto"
+            outlined
+            @click="openTg"
+          >
+            Написать в Telegram <img src="/assets/img/tg.svg" alt="" class="ml-2 w-[25px]">
+          </Button>
         </div>
       </div>
     </section>
@@ -56,6 +65,13 @@ import FAQ from '~/app/components/home/FAQ.vue'
 import FindUs from '~/app/components/home/FindUs.vue'
 import { scrollToTop, scrollToBottom } from '@/app/helpers/scrollTo'
 import { anhcorScroll } from '@/app/helpers/anhcorScroll'
+
+const openWhatsUp = () => {
+  window.open('https://api.whatsapp.com/send?phone=79046474725')
+}
+const openTg = () => {
+  window.open('https://t.me/+79046474725')
+}
 </script>
 
 <style scoped></style>
