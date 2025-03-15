@@ -60,15 +60,15 @@
           </thead>
           <tbody>
             <tr class="bg-gray-100">
-              <td class="border px-4 py-2">Балансировка одного колеса легковой автомобиль 13-17</td>
+              <td class="border px-4 py-2">Балансировка одного колеса легковой автомобиль 13-17″ </td>
               <td class="border px-4 py-2">250 руб.</td>
             </tr>
             <tr class="bg-white">
-              <td class="border px-4 py-2">Балансировка одного колеса кроссовер 15-18</td>
+              <td class="border px-4 py-2">Балансировка одного колеса кроссовер 15-18″ </td>
               <td class="border px-4 py-2">300 руб.</td>
             </tr>
             <tr class="bg-gray-100">
-              <td class="border px-4 py-2">Балансировка одного колеса 19-24</td>
+              <td class="border px-4 py-2">Балансировка одного колеса 19-24″ </td>
               <td class="border px-4 py-2">400 руб.</td>
             </tr>
           </tbody>

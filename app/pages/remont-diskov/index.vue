@@ -55,11 +55,11 @@
               <td class="border px-4 py-2">от 500 руб.</td>
             </tr>
             <tr class="bg-gray-100">
-              <td class="border px-4 py-2">Исправление геометрии одного литого диска 13-17</td>
+              <td class="border px-4 py-2">Исправление геометрии одного литого диска 13-17″</td>
               <td class="border px-4 py-2">от 1000 руб.</td>
             </tr>
             <tr class="bg-gray-100">
-              <td class="border px-4 py-2">Исправление геометрии одного литого диска 18-22</td>
+              <td class="border px-4 py-2">Исправление геометрии одного литого диска 18-22″</td>
               <td class="border px-4 py-2">от 1500 руб.</td>
             </tr>
           </tbody>

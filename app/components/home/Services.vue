@@ -11,7 +11,7 @@
               01
             </span>
             <span class="font-bold text-2xl text-white">
-              Шиномонтаж R12-R24 <br>
+              Шиномонтаж 12-24″  <br>
             </span>
           </p>
           <div class="mt-2">

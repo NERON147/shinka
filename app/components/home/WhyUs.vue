@@ -50,7 +50,7 @@
         </div>
         <div class="bg-white p-8 w-auto rounded-xl max-sm:col-span-4 col-span-3">
           <h3 class="max-md:text-[42px] text-[64px] font-extrabold text-primary2">
-            <span class="text-4xl">R</span>18 - <span class="text-4xl">R</span>24
+            18″ - 24″
           </h3>
           <p class="mt-5 flex gap-2 items-center">
             <span class="text-gray-500 text-sm">
@@ -62,7 +62,7 @@
           </p>
           <p class="mt-2">
             <span class="text-xl">
-              Самые низкие цены, на шиномонтаж колес с диаметром  r18 - r24
+              Самые низкие цены, на шиномонтаж колес с диаметром  18″ - 24″
             </span>
           </p>
         </div>
@@ -116,7 +116,7 @@
           </p>
           <p class="mt-2">
             <span class="text-xl">
-              Работы по смене резины  от 25 минут до R19
+              Работы по смене резины  от 25 минут до 19″
             </span>
           </p>
         </div>
