@@ -50,28 +50,30 @@
         <li>Повышение комфорта и безопасности вождения</li>
       </ul>
       <h3 class="text-xl font-semibold mb-2">Прайс-лист на услуги по балансировке колес</h3>
-      <table class="table-auto w-full mb-4">
-        <thead>
-          <tr class="bg-gray-200">
-            <th class="px-4 py-2">Услуга</th>
-            <th class="px-4 py-2">Цена</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr class="bg-gray-100">
-            <td class="border px-4 py-2">Балансировка одного колеса</td>
-            <td class="border px-4 py-2">500 руб.</td>
-          </tr>
-          <tr class="bg-white">
-            <td class="border px-4 py-2">Балансировка комплекта (4 колеса)</td>
-            <td class="border px-4 py-2">1800 руб.</td>
-          </tr>
-          <tr class="bg-gray-100">
-            <td class="border px-4 py-2">Балансировка колес для внедорожников (4 колеса)</td>
-            <td class="border px-4 py-2">2200 руб.</td>
-          </tr>
-        </tbody>
-      </table>
+      <div class="overflow-x-auto">
+        <table class="min-w-full mb-4">
+          <thead>
+            <tr class="bg-gray-200">
+              <th class="px-4 py-2">Услуга</th>
+              <th class="px-4 py-2">Цена</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="bg-gray-100">
+              <td class="border px-4 py-2">Балансировка одного колеса</td>
+              <td class="border px-4 py-2">500 руб.</td>
+            </tr>
+            <tr class="bg-white">
+              <td class="border px-4 py-2">Балансировка комплекта (4 колеса)</td>
+              <td class="border px-4 py-2">1800 руб.</td>
+            </tr>
+            <tr class="bg-gray-100">
+              <td class="border px-4 py-2">Балансировка колес для внедорожников (4 колеса)</td>
+              <td class="border px-4 py-2">2200 руб.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
       <p class="mb-4">
         Воспользуйтесь нашими услугами по балансировке колес, чтобы обеспечить комфортное и безопасное вождение. Мы гарантируем высокое качество выполнения работ и заботу о вашем автомобиле.
       </p>

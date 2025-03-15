@@ -66,6 +66,20 @@ import FindUs from '~/app/components/home/FindUs.vue'
 import { scrollToTop, scrollToBottom } from '@/app/helpers/scrollTo'
 import { anhcorScroll } from '@/app/helpers/anhcorScroll'
 
+useSeoMeta({
+  title: 'ШИНОМОНТАЖ, СТО  РЕМ. РАБОТЫ ЛЕГКОВЫХ АВТОМОБИЛЕЙ В ГАТЧИНЕ',
+  ogTitle: 'ШИНОМОНТАЖ, СТО  РЕМ. РАБОТЫ ЛЕГКОВЫХ АВТОМОБИЛЕЙ В ГАТЧИНЕ',
+  description: 'Полный комплекс, шиномонтажных и СТО работ в Гатчине',
+  ogDescription: 'Полный комплекс, шиномонтажных и СТО работ в Гатчине',
+  ogType: 'website',
+  ogImage: '/assets/img/stoSEO.jpg',
+  ogUrl: `${process.client ? window.location.origin : ''}`,
+  twitterCard: 'summary_large_image',
+  twitterTitle: 'ШИНОМОНТАЖ, СТО  РЕМ. РАБОТЫ ЛЕГКОВЫХ АВТОМОБИЛЕЙ В ГАТЧИНЕ',
+  twitterDescription: 'Полный комплекс, шиномонтажных и СТО работ в Гатчине',
+  twitterImage: '/assets/img/stoSEO.jpg'
+})
+
 const openWhatsUp = () => {
   window.open('https://api.whatsapp.com/send?phone=79046474725')
 }

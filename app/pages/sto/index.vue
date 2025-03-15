@@ -27,48 +27,50 @@
         <li>Шиномонтаж и балансировка колес</li>
       </ul>
       <h3 class="text-xl font-semibold mb-2">Прайс-лист на услуги СТО</h3>
-      <table class="table-auto w-full mb-4">
-        <thead>
-          <tr class="bg-gray-200">
-            <th class="px-4 py-2">Услуга</th>
-            <th class="px-4 py-2">Цена</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr class="bg-gray-100">
-            <td class="border px-4 py-2">Диагностика двигателя</td>
-            <td class="border px-4 py-2">1500 руб.</td>
-          </tr>
-          <tr class="bg-white">
-            <td class="border px-4 py-2">Замена масла и масляного фильтра</td>
-            <td class="border px-4 py-2">1000 руб. + стоимость материалов</td>
-          </tr>
-          <tr class="bg-gray-100">
-            <td class="border px-4 py-2">Ремонт тормозной системы</td>
-            <td class="border px-4 py-2">от 2000 руб.</td>
-          </tr>
-          <tr class="bg-white">
-            <td class="border px-4 py-2">Замена тормозных колодок (комплект)</td>
-            <td class="border px-4 py-2">1200 руб. + стоимость запчастей</td>
-          </tr>
-          <tr class="bg-gray-100">
-            <td class="border px-4 py-2">Ремонт подвески</td>
-            <td class="border px-4 py-2">от 3000 руб.</td>
-          </tr>
-          <tr class="bg-gray-100">
-            <td class="border px-4 py-2">Электротехнические работы</td>
-            <td class="border px-4 py-2">от 1000 руб.</td>
-          </tr>
-          <tr class="bg-white">
-            <td class="border px-4 py-2">Ремонт электропроводки</td>
-            <td class="border px-4 py-2">от 1500 руб.</td>
-          </tr>
-          <tr class="bg-gray-100">
-            <td class="border px-4 py-2">Кузовной ремонт</td>
-            <td class="border px-4 py-2">от 5000 руб.</td>
-          </tr>
-        </tbody>
-      </table>
+      <div class="overflow-x-auto">
+        <table class="min-w-full mb-4">
+          <thead>
+            <tr class="bg-gray-200">
+              <th class="px-4 py-2">Услуга</th>
+              <th class="px-4 py-2">Цена</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="bg-gray-100">
+              <td class="border px-4 py-2">Диагностика двигателя</td>
+              <td class="border px-4 py-2">1500 руб.</td>
+            </tr>
+            <tr class="bg-white">
+              <td class="border px-4 py-2">Замена масла и масляного фильтра</td>
+              <td class="border px-4 py-2">1000 руб. + стоимость материалов</td>
+            </tr>
+            <tr class="bg-gray-100">
+              <td class="border px-4 py-2">Ремонт тормозной системы</td>
+              <td class="border px-4 py-2">от 2000 руб.</td>
+            </tr>
+            <tr class="bg-white">
+              <td class="border px-4 py-2">Замена тормозных колодок (комплект)</td>
+              <td class="border px-4 py-2">1200 руб. + стоимость запчастей</td>
+            </tr>
+            <tr class="bg-gray-100">
+              <td class="border px-4 py-2">Ремонт подвески</td>
+              <td class="border px-4 py-2">от 3000 руб.</td>
+            </tr>
+            <tr class="bg-gray-100">
+              <td class="border px-4 py-2">Электротехнические работы</td>
+              <td class="border px-4 py-2">от 1000 руб.</td>
+            </tr>
+            <tr class="bg-white">
+              <td class="border px-4 py-2">Ремонт электропроводки</td>
+              <td class="border px-4 py-2">от 1500 руб.</td>
+            </tr>
+            <tr class="bg-gray-100">
+              <td class="border px-4 py-2">Кузовной ремонт</td>
+              <td class="border px-4 py-2">от 5000 руб.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
       <p class="mb-4">
         Воспользуйтесь нашими услугами СТО, чтобы обеспечить надежную и безопасную эксплуатацию вашего автомобиля. Мы гарантируем высокое качество выполнения работ и индивидуальный подход к каждому клиенту.
       </p>

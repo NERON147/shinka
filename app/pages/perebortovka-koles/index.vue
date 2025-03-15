@@ -40,28 +40,30 @@
         <li>Повреждении шин или дисков</li>
       </ul>
       <h3 class="text-xl font-semibold mb-2">Прайс-лист на услуги по перебортовке колес</h3>
-      <table class="table-auto w-full mb-4">
-        <thead>
-          <tr class="bg-gray-200">
-            <th class="px-4 py-2">Услуга</th>
-            <th class="px-4 py-2">Цена</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr class="bg-gray-100">
-            <td class="border px-4 py-2">Перебортовка одного колеса</td>
-            <td class="border px-4 py-2">600 руб.</td>
-          </tr>
-          <tr class="bg-white">
-            <td class="border px-4 py-2">Перебортовка комплекта (4 колеса)</td>
-            <td class="border px-4 py-2">2200 руб.</td>
-          </tr>
-          <tr class="bg-gray-100">
-            <td class="border px-4 py-2">Перебортовка колес для внедорожников (4 колеса)</td>
-            <td class="border px-4 py-2">2800 руб.</td>
-          </tr>
-        </tbody>
-      </table>
+      <div class="overflow-x-auto">
+        <table class="min-w-full mb-4">
+          <thead>
+            <tr class="bg-gray-200">
+              <th class="px-4 py-2">Услуга</th>
+              <th class="px-4 py-2">Цена</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="bg-gray-100">
+              <td class="border px-4 py-2">Перебортовка одного колеса</td>
+              <td class="border px-4 py-2">600 руб.</td>
+            </tr>
+            <tr class="bg-white">
+              <td class="border px-4 py-2">Перебортовка комплекта (4 колеса)</td>
+              <td class="border px-4 py-2">2200 руб.</td>
+            </tr>
+            <tr class="bg-gray-100">
+              <td class="border px-4 py-2">Перебортовка колес для внедорожников (4 колеса)</td>
+              <td class="border px-4 py-2">2800 руб.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
       <p class="mb-4">
         Воспользуйтесь нашими услугами по перебортовке колес, чтобы обеспечить правильную установку шин и их долговечность. Мы гарантируем высокое качество выполнения работ и заботу о вашем автомобиле.
       </p>

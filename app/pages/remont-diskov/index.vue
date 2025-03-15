@@ -41,28 +41,30 @@
         <li>Неравномерный износ шин</li>
       </ul>
       <h3 class="text-xl font-semibold mb-2">Прайс-лист на услуги по ремонту дисков колес</h3>
-      <table class="table-auto w-full mb-4">
-        <thead>
-          <tr class="bg-gray-200">
-            <th class="px-4 py-2">Услуга</th>
-            <th class="px-4 py-2">Цена</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr class="bg-gray-100">
-            <td class="border px-4 py-2">Исправление геометрии одного диска</td>
-            <td class="border px-4 py-2">1000 руб.</td>
-          </tr>
-          <tr class="bg-white">
-            <td class="border px-4 py-2">Сварка и шлифовка трещин одного диска</td>
-            <td class="border px-4 py-2">1500 руб.</td>
-          </tr>
-          <tr class="bg-gray-100">
-            <td class="border px-4 py-2">Покраска и нанесение защитного покрытия одного диска</td>
-            <td class="border px-4 py-2">2000 руб.</td>
-          </tr>
-        </tbody>
-      </table>
+      <div class="overflow-x-auto">
+        <table class="min-w-full mb-4">
+          <thead>
+            <tr class="bg-gray-200">
+              <th class="px-4 py-2">Услуга</th>
+              <th class="px-4 py-2">Цена</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="bg-gray-100">
+              <td class="border px-4 py-2">Исправление геометрии одного диска</td>
+              <td class="border px-4 py-2">1000 руб.</td>
+            </tr>
+            <tr class="bg-white">
+              <td class="border px-4 py-2">Сварка и шлифовка трещин одного диска</td>
+              <td class="border px-4 py-2">1500 руб.</td>
+            </tr>
+            <tr class="bg-gray-100">
+              <td class="border px-4 py-2">Покраска и нанесение защитного покрытия одного диска</td>
+              <td class="border px-4 py-2">2000 руб.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
       <p class="mb-4">
         Воспользуйтесь нашими услугами по ремонту дисков колес, чтобы вернуть вашему автомобилю первоначальный внешний вид и обеспечить его безопасную эксплуатацию. Мы гарантируем высокое качество выполнения работ и индивидуальный подход к каждому клиенту.
       </p>

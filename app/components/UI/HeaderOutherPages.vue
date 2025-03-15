@@ -6,7 +6,7 @@
           <img
             src="/assets/img/logo.png"
             alt="logo"
-            class="max-lg:w-[300px] max-sxxs:w-[250px]"
+            class="max-xl:w-[300px] max-sxxs:w-[250px]"
           >
         </nuxt-link>
 
@@ -24,9 +24,9 @@
           </ul>
         </div>
         <div class="flex flex-col max-ss:hidden">
-          <span class="font-light text-lg">
-            пн-пт: <span class="">10:00 - 19:00</span>
-            сб: <span class="">10:00 - 15:00</span>
+          <span class="font-light text-lg max-xl:text-base">
+            <span class="font-semibold">пн-пт: </span>  <span class="text-[#b87a3c]">10:00 - 19:00</span>
+            <span class="font-semibold">сб: </span> <span class="text-[#b87a3c]">10:00 - 15:00</span>
           </span>
           <a
             href="tel:+79046474725"
@@ -71,7 +71,8 @@
 
                 <div class="flex flex-col max-ss:flex ss:hidden">
                   <span class="text-black font-light text-lg">
-                    пн-пт: 09:00 - 20:00
+                    <span class="font-semibold">пн-пт: </span>  <span class="text-[#b87a3c]">10:00 - 19:00</span>
+                    <span class="font-semibold">сб: </span> <span class="text-[#b87a3c]">10:00 - 15:00</span>
                   </span>
                   <a
                     href="tel:+79046474725"

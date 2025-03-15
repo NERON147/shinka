@@ -22,8 +22,8 @@
         </div>
         <div class="flex flex-col max-ss:hidden">
           <span class="text-primary font-light text-lg">
-            пн-пт: <span class="text-[#b87a3c]">10:00 - 19:00</span>
-            сб: <span class="text-[#b87a3c]">10:00 - 15:00</span>
+            <span class="font-semibold">пн-пт: </span>  <span class="text-[#b87a3c]">10:00 - 19:00 </span>
+            <span class="font-semibold">сб: </span> <span class="text-[#b87a3c]">10:00 - 15:00 </span>
           </span>
           <a
             href="tel:+79046474725"
@@ -63,7 +63,8 @@
                 </li>
                 <div class="flex flex-col max-ss:flex ss:hidden">
                   <span class="text-white font-light text-lg">
-                    пн-пт: 09:00 - 20:00
+                    <span class="font-semibold">пн-пт: </span>  <span class="text-[#b87a3c]">10:00 - 19:00 </span>
+                    <span class="font-semibold">сб: </span> <span class="text-[#b87a3c]">10:00 - 15:00 </span>
                   </span>
                   <a
                     href="tel:+79046474725"

@@ -30,31 +30,33 @@
         <li>Укладывайте шины горизонтально, если они без дисков, и вертикально, если они на дисках.</li>
       </ol>
       <h3 class="text-xl font-semibold mb-2">Прайс-лист на услуги по хранению шин</h3>
-      <table class="table-auto w-full mb-4">
-        <thead>
-          <tr class="bg-gray-200">
-            <th class="px-4 py-2">Услуга</th>
-            <th class="px-4 py-2">Цена</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr class="bg-gray-100">
-            <td class="border px-4 py-2">Хранение одного комплекта шин (4 шт.) без дисков</td>
-            <td class="border px-4 py-2">1000 руб./сезон</td>
-          </tr>
-          <tr class="bg-white">
-            <td class="border px-4 py-2">Хранение одного комплекта шин (4 шт.) на дисках</td>
-            <td class="border px-4 py-2">1500 руб./сезон</td>
-          </tr>
-          <tr class="bg-gray-100">
-            <td class="border px-4 py-2">Мойка шин перед хранением</td>
-            <td class="border px-4 py-2">500 руб./комплект</td>
-          </tr>
-        </tbody>
-      </table>
-      <p class="mb-4">
-        Воспользуйтесь нашими услугами по хранению шин, чтобы быть уверенными в их сохранности и безопасности. Мы предоставляем оптимальные условия хранения и заботимся о вашем комфорте.
-      </p>
+      <div class="overflow-x-auto">
+        <table class="min-w-full mb-4">
+          <thead>
+            <tr class="bg-gray-200">
+              <th class="px-4 py-2">Услуга</th>
+              <th class="px-4 py-2">Цена</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="bg-gray-100">
+              <td class="border px-4 py-2">Хранение одного комплекта шин (4 шт.) без дисков</td>
+              <td class="border px-4 py-2">1000 руб./сезон</td>
+            </tr>
+            <tr class="bg-white">
+              <td class="border px-4 py-2">Хранение одного комплекта шин (4 шт.) на дисках</td>
+              <td class="border px-4 py-2">1500 руб./сезон</td>
+            </tr>
+            <tr class="bg-gray-100">
+              <td class="border px-4 py-2">Мойка шин перед хранением</td>
+              <td class="border px-4 py-2">500 руб./комплект</td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="mb-4">
+          Воспользуйтесь нашими услугами по хранению шин, чтобы быть уверенными в их сохранности и безопасности. Мы предоставляем оптимальные условия хранения и заботимся о вашем комфорте.
+        </p>
+      </div>
     </article>
     <p class="text-4xl mb-10 font-bold text-center">
       У нас вы можете оставить свои шины на хранение все за пьять тыщ....
