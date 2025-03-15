@@ -57,7 +57,7 @@
               03
             </span>
             <span class="font-bold text-2xl">
-              Дешево <br>
+              Выгодно <br>
             </span>
           </p>
           <p class="mt-2">
