@@ -9,9 +9,11 @@
           <i class="pi pi-compass text-primary text-4xl" />
           <a
             class="max-md:text-xl text-2xl font-bold"
-            href="yandexnavi://route?to=59.551708,30.162460"
+            href="https://yandex.ru/maps/org/shinny_tsentr/11583592634/?ll=30.162460%2C59.551708&z=17"
             target="_blank"
+            @click="openYandexNavigator"
           >
+
             Нажмите чтобы построить маршрут до: <br> <span class="font-normal">станция Фрезерная, 1, посёлок Торфяное, <br> Гатчинский муниципальный округ, Ленинградская область</span>
 
           </a>
@@ -25,7 +27,12 @@
 </template>
 
 <script setup lang="ts">
-
+function openYandexNavigator (event: any) {
+  if (/Android|iPhone|iPad/i.test(navigator.userAgent)) {
+    event.preventDefault()
+    window.location.href = 'yandexmaps://maps.yandex.ru/?ll=59.551708,30.162460&z=12'
+  }
+}
 </script>
 
 <style scoped>
