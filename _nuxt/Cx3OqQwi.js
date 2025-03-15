@@ -1,1 +1,0 @@
-import"./CvXGpA_R.js";import{P as e}from"./D90WzbDy.js";import{d as t,z as o,A as r,U as a}from"./BCuyfSJ-.js";import"./CkVg9ABx.js";import"./DlAUqK2U.js";const d=t({__name:"index",setup(m){return(n,s)=>(o(),r("main",null,[a(e,{class:"!mb-10 !mt-40"})]))}});export{d as default};
