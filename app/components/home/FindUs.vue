@@ -30,7 +30,7 @@
 function openYandexNavigator (event: any) {
   if (/Android|iPhone|iPad/i.test(navigator.userAgent)) {
     event.preventDefault()
-    window.location.href = 'yandexmaps://maps.yandex.ru/?ll=59.551708,30.162460&z=12'
+    window.location.href = 'yandexnavi://build_route_on_map?lat_to=59.551708&lon_to=30.162460'
   }
 }
 </script>
