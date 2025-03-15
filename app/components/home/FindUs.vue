@@ -13,9 +13,7 @@
             target="_blank"
             @click="openYandexNavigator"
           >
-
             Нажмите чтобы построить маршрут до: <br> <span class="font-normal">станция Фрезерная, 1, посёлок Торфяное, <br> Гатчинский муниципальный округ, Ленинградская область</span>
-
           </a>
         </div>
         <div>
@@ -30,7 +28,7 @@
 function openYandexNavigator (event: any) {
   if (/Android|iPhone|iPad/i.test(navigator.userAgent)) {
     event.preventDefault()
-    window.location.href = 'yandexnavi://build_route_on_map?lat_to=59.551708&lon_to=30.162460'
+    window.location.href = 'yandexnavi://build_route_on_map?lat_to=59.551440&lon_to=30.158040'
   }
 }
 </script>
