@@ -36,6 +36,13 @@
           >
             Написать в Telegram <img src="/assets/img/tg.svg" alt="" class="ml-2 w-[25px]">
           </Button>
+          <Button
+            class="text-white border-white h-12 hover:border-[#bbbbbb] max-ss:w-fit max-ss:mx-auto max-ss:block hidden min-w-[240px] w-fit"
+            outlined
+            @click="openCall"
+          >
+            Позвонить
+          </Button>
         </div>
       </div>
     </section>
@@ -69,14 +76,14 @@ import { anhcorScroll } from '@/app/helpers/anhcorScroll'
 useSeoMeta({
   title: 'ШИНОМОНТАЖ, СТО  РЕМ. РАБОТЫ ЛЕГКОВЫХ АВТОМОБИЛЕЙ В ГАТЧИНЕ',
   ogTitle: 'ШИНОМОНТАЖ, СТО  РЕМ. РАБОТЫ ЛЕГКОВЫХ АВТОМОБИЛЕЙ В ГАТЧИНЕ',
-  description: 'Полный комплекс, шиномонтажных и СТО работ в Гатчине',
-  ogDescription: 'Полный комплекс, шиномонтажных и СТО работ в Гатчине',
+  description: 'Шиномонтаж техническое обслуживание и ремонт авто в Гатчине по приятным ценам',
+  ogDescription: 'Шиномонтаж техническое обслуживание и ремонт авто в Гатчине по приятным ценам',
   ogType: 'website',
   ogImage: '/assets/img/stoSEO.jpg',
   ogUrl: `${process.client ? window.location.origin : ''}`,
   twitterCard: 'summary_large_image',
   twitterTitle: 'ШИНОМОНТАЖ, СТО  РЕМ. РАБОТЫ ЛЕГКОВЫХ АВТОМОБИЛЕЙ В ГАТЧИНЕ',
-  twitterDescription: 'Полный комплекс, шиномонтажных и СТО работ в Гатчине',
+  twitterDescription: 'Шиномонтаж техническое обслуживание и ремонт авто в Гатчине по приятным ценам',
   twitterImage: '/assets/img/stoSEO.jpg'
 })
 
@@ -84,7 +91,16 @@ const openWhatsUp = () => {
   window.open('https://api.whatsapp.com/send?phone=79046474725')
 }
 const openTg = () => {
-  window.open('https://t.me/+79046474725')
+  window.open('https://t.me/+79681856015')
+}
+
+const openCall = () => {
+  const phoneLink = document.createElement('a')
+  phoneLink.href = 'tel:+79681856015'
+  phoneLink.style.display = 'none'
+  document.body.appendChild(phoneLink)
+  phoneLink.click()
+  document.body.removeChild(phoneLink)
 }
 </script>
 

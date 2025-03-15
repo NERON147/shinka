@@ -3,7 +3,7 @@
     <h1 class="font-bold text-4xl mt-40 text-center">
       Услуги СТО
     </h1>
-    <img src="/assets/img/stoPage.jpg" alt="" class="rounded-3xl max-sm:h-auto h-[400px] w-auto m-auto my-10">
+    <img src="/assets/img/stoDescr.jpg" alt="" class="rounded-3xl max-sm:h-auto h-[400px] w-auto m-auto my-10">
     <article class="bg-white p-6 rounded-lg shadow-lg">
       <h2 class="text-2xl font-bold mb-4">Услуги СТО: Комплексное Обслуживание Вашего Автомобиля</h2>
       <p class="mb-4">
@@ -41,8 +41,8 @@
               <td class="border px-4 py-2">1500 руб.</td>
             </tr>
             <tr class="bg-white">
-              <td class="border px-4 py-2">Замена масла и масляного фильтра</td>
-              <td class="border px-4 py-2">1000 руб. + стоимость материалов</td>
+              <td class="border px-4 py-2">Замена масла и масляного фильтра без с/у защиты двигателя</td>
+              <td class="border px-4 py-2">1000 руб.</td>
             </tr>
             <tr class="bg-gray-100">
               <td class="border px-4 py-2">Ремонт тормозной системы</td>
@@ -50,7 +50,7 @@
             </tr>
             <tr class="bg-white">
               <td class="border px-4 py-2">Замена тормозных колодок (комплект)</td>
-              <td class="border px-4 py-2">1200 руб. + стоимость запчастей</td>
+              <td class="border px-4 py-2">от 1200 руб.</td>
             </tr>
             <tr class="bg-gray-100">
               <td class="border px-4 py-2">Ремонт подвески</td>
@@ -59,14 +59,6 @@
             <tr class="bg-gray-100">
               <td class="border px-4 py-2">Электротехнические работы</td>
               <td class="border px-4 py-2">от 1000 руб.</td>
-            </tr>
-            <tr class="bg-white">
-              <td class="border px-4 py-2">Ремонт электропроводки</td>
-              <td class="border px-4 py-2">от 1500 руб.</td>
-            </tr>
-            <tr class="bg-gray-100">
-              <td class="border px-4 py-2">Кузовной ремонт</td>
-              <td class="border px-4 py-2">от 5000 руб.</td>
             </tr>
           </tbody>
         </table>
@@ -90,6 +82,20 @@
 import { anhcorScroll } from '@/app/helpers/anhcorScroll'
 definePageMeta({
   layout: 'other-page'
+})
+
+useSeoMeta({
+  title: 'ШИНОМОНТАЖ, СТО  РЕМ. РАБОТЫ ЛЕГКОВЫХ АВТОМОБИЛЕЙ В ГАТЧИНЕ',
+  ogTitle: 'ШИНОМОНТАЖ, СТО  РЕМ. РАБОТЫ ЛЕГКОВЫХ АВТОМОБИЛЕЙ В ГАТЧИНЕ',
+  description: 'Доверьте ремонт своего авто в Wheel Garage по приятной цене...',
+  ogDescription: 'Доверьте ремонт своего авто в Wheel Garage по приятной цене...',
+  ogType: 'website',
+  ogImage: '/assets/img/stoSEO.jpg',
+  ogUrl: `${process.client ? window.location.origin : ''}`,
+  twitterCard: 'summary_large_image',
+  twitterTitle: 'ШИНОМОНТАЖ, СТО  РЕМ. РАБОТЫ ЛЕГКОВЫХ АВТОМОБИЛЕЙ В ГАТЧИНЕ',
+  twitterDescription: 'Доверьте ремонт своего авто в Wheel Garage по приятной цене...',
+  twitterImage: '/assets/img/stoSEO.jpg'
 })
 </script>
 

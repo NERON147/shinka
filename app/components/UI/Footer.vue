@@ -3,7 +3,7 @@
     <div class="container text-white flex max-sxxs:h-full h-full items-center">
       <div class="max-md:w-full w-1/2">
         <p class="max-ss:text-xl text-2xl mt-10">
-          Оставьте заявку или <a :href="'tel:+79046474725'" class="text-[#b87a3c]" @click="sendMessageCall">позвоните</a>  прямо сейчас
+          Оставьте заявку или <a :href="'tel:+79681856015'" class="text-[#b87a3c]" @click="sendMessageCall">позвоните</a>  прямо сейчас
         </p>
         <div class="mt-10 flex flex-col gap-5">
           <FloatLabel>

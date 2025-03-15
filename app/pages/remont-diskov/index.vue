@@ -51,16 +51,16 @@
           </thead>
           <tbody>
             <tr class="bg-gray-100">
-              <td class="border px-4 py-2">Исправление геометрии одного диска</td>
-              <td class="border px-4 py-2">1000 руб.</td>
-            </tr>
-            <tr class="bg-white">
-              <td class="border px-4 py-2">Сварка и шлифовка трещин одного диска</td>
-              <td class="border px-4 py-2">1500 руб.</td>
+              <td class="border px-4 py-2">Исправление геометрии одного стального диска</td>
+              <td class="border px-4 py-2">от 500 руб.</td>
             </tr>
             <tr class="bg-gray-100">
-              <td class="border px-4 py-2">Покраска и нанесение защитного покрытия одного диска</td>
-              <td class="border px-4 py-2">2000 руб.</td>
+              <td class="border px-4 py-2">Исправление геометрии одного литого диска 13-17</td>
+              <td class="border px-4 py-2">от 1000 руб.</td>
+            </tr>
+            <tr class="bg-gray-100">
+              <td class="border px-4 py-2">Исправление геометрии одного литого диска 18-22</td>
+              <td class="border px-4 py-2">от 1500 руб.</td>
             </tr>
           </tbody>
         </table>
@@ -84,6 +84,20 @@
 import { anhcorScroll } from '@/app/helpers/anhcorScroll'
 definePageMeta({
   layout: 'other-page'
+})
+
+useSeoMeta({
+  title: 'ШИНОМОНТАЖ, СТО  РЕМ. РАБОТЫ ЛЕГКОВЫХ АВТОМОБИЛЕЙ В ГАТЧИНЕ',
+  ogTitle: 'ШИНОМОНТАЖ, СТО  РЕМ. РАБОТЫ ЛЕГКОВЫХ АВТОМОБИЛЕЙ В ГАТЧИНЕ',
+  description: 'Отремонтируйте свои диски в Wheel Garage по приятной цене...',
+  ogDescription: 'Отремонтируйте свои диски в Wheel Garage по приятной цене...',
+  ogType: 'website',
+  ogImage: '/assets/img/stoSEO.jpg',
+  ogUrl: `${process.client ? window.location.origin : ''}`,
+  twitterCard: 'summary_large_image',
+  twitterTitle: 'ШИНОМОНТАЖ, СТО  РЕМ. РАБОТЫ ЛЕГКОВЫХ АВТОМОБИЛЕЙ В ГАТЧИНЕ',
+  twitterDescription: 'Отремонтируйте свои диски в Wheel Garage по приятной цене...',
+  twitterImage: '/assets/img/stoSEO.jpg'
 })
 </script>
 

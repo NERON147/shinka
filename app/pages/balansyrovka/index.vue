@@ -60,16 +60,16 @@
           </thead>
           <tbody>
             <tr class="bg-gray-100">
-              <td class="border px-4 py-2">Балансировка одного колеса</td>
-              <td class="border px-4 py-2">500 руб.</td>
+              <td class="border px-4 py-2">Балансировка одного колеса легковой автомобиль 13-17</td>
+              <td class="border px-4 py-2">250 руб.</td>
             </tr>
             <tr class="bg-white">
-              <td class="border px-4 py-2">Балансировка комплекта (4 колеса)</td>
-              <td class="border px-4 py-2">1800 руб.</td>
+              <td class="border px-4 py-2">Балансировка одного колеса кроссовер 15-18</td>
+              <td class="border px-4 py-2">300 руб.</td>
             </tr>
             <tr class="bg-gray-100">
-              <td class="border px-4 py-2">Балансировка колес для внедорожников (4 колеса)</td>
-              <td class="border px-4 py-2">2200 руб.</td>
+              <td class="border px-4 py-2">Балансировка одного колеса 19-24</td>
+              <td class="border px-4 py-2">400 руб.</td>
             </tr>
           </tbody>
         </table>
@@ -93,6 +93,20 @@
 import { anhcorScroll } from '@/app/helpers/anhcorScroll'
 definePageMeta({
   layout: 'other-page'
+})
+
+useSeoMeta({
+  title: 'ШИНОМОНТАЖ, СТО  РЕМ. РАБОТЫ ЛЕГКОВЫХ АВТОМОБИЛЕЙ В ГАТЧИНЕ',
+  ogTitle: 'ШИНОМОНТАЖ, СТО  РЕМ. РАБОТЫ ЛЕГКОВЫХ АВТОМОБИЛЕЙ В ГАТЧИНЕ',
+  description: 'Для чего же нужна балансировка и ее цены...',
+  ogDescription: 'Для чего же нужна балансировка и ее цены...',
+  ogType: 'website',
+  ogImage: '/assets/img/stoSEO.jpg',
+  ogUrl: `${process.client ? window.location.origin : ''}`,
+  twitterCard: 'summary_large_image',
+  twitterTitle: 'ШИНОМОНТАЖ, СТО  РЕМ. РАБОТЫ ЛЕГКОВЫХ АВТОМОБИЛЕЙ В ГАТЧИНЕ',
+  twitterDescription: 'Для чего же нужна балансировка и ее цены...',
+  twitterImage: '/assets/img/stoSEO.jpg'
 })
 </script>
 

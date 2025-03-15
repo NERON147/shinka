@@ -24,28 +24,22 @@
       </nuxt-link>
 
       <div class="flex flex-col gap-10 mt-3 max-ss:mt-0">
-        <nuxt-link to="prodaja-reziny">
-          <div class="bg-[#f5f5f5] p-8 rounded-xl col-span-3 w-fit flex max-w-[700px] max-ss:flex-wrap cursor-pointer" @mouseover="hover[1] = true" @mouseout="hover[1] = false">
-            <div>
-              <p class="mt-5 flex gap-2 items-center">
-                <span class="text-gray-500 text-sm">
-                  02
-                </span>
-                <span class="font-bold text-2xl">
-                  Продажа новой и б/у <br>
-                  резины и дисков
-                </span>
-              </p>
-              <div class="mt-2">
-                <p class=" text-xl mt-5 flex gap-3 items-center transition-all" :class="{'text-primary': hover[1]}">
-                  Подробнее <ArrowLongRightIcon class="h-8 transition-all" :class="{'translate-x-7': hover[1]}" />
-                </p>
-              </div>
-            </div>
-
-            <img src="/assets/img/kolesa-bez-diska.png" alt="kolesa-bez-diska" width="210" class="max-sm:ml-[15px] ml-[135px] max-ss:mt-10">
+        <div class="bg-[#f5f5f5] p-8 rounded-xl col-span-3 w-fit flex max-w-[700px] max-ss:flex-wrap cursor-pointer" @mouseover="hover[1] = true" @mouseout="hover[1] = false">
+          <div>
+            <p class="mt-5 flex gap-2 items-center">
+              <span class="text-gray-500 text-sm">
+                02
+              </span>
+              <span class="font-bold text-2xl">
+                Продажа новой и б/у <br>
+                резины и дисков
+              </span>
+            </p>
+            <div class="mt-2" />
           </div>
-        </nuxt-link>
+
+          <img src="/assets/img/kolesa-bez-diska.png" alt="kolesa-bez-diska" width="210" class="max-sm:ml-[15px] ml-[135px] max-ss:mt-10">
+        </div>
         <nuxt-link to="balansyrovka">
           <div class="bg-primary2 rounded-xl col-span-3 max-xs:w-full w-fit flex max-w-[700px] overflow-hidden max-ss:flex-wrap cursor-pointer" @mouseover="hover[2] = true" @mouseout="hover[2] = false">
             <div class="p-8">
@@ -92,7 +86,7 @@
             <img src="/assets/img/hranenenie.png" alt="hranenenie" width="350">
           </div>
         </nuxt-link>
-        <nuxt-link to="perebortovka-koles">
+        <nuxt-link to="shinomotaj">
           <div class="bg-[#d4d4d4] rounded-xl col-span-3 max-xs:w-full w-fit flex max-w-[700px] overflow-hidden cursor-pointer" @mouseover="hover[4] = true" @mouseout="hover[4] = false">
             <div class="p-8">
               <p class="mt-5 flex gap-2 items-center">
@@ -145,7 +139,7 @@
                 07
               </span>
               <span class="font-bold text-2xl">
-                СТО - ремонтны работы <br>
+                СТО - ремонтные работы <br>
               </span>
             </p>
             <div class="mt-2">
@@ -155,7 +149,7 @@
             </div>
           </div>
 
-          <img src="/assets/img/sto.jpg" alt="sto" width="350" class="max-xs:hidden ml-auto">
+          <img src="/assets/img/stoLex.jpg" alt="sto" width="350" class="max-xs:hidden ml-auto">
         </div>
       </div>
     </nuxt-link>

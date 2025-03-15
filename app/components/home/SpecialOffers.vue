@@ -24,15 +24,15 @@
           </h3>
         </div>
         <div class="max-xxs:w-full w-[600px] h-[400px] relative max-sxxs:pt-[30px] max-xxs:pt-[50px] pt-[100px] p-[30px] rounded-lg cursor-pointer" @mouseover="data.hover2 = true" @mouseout="data.hover2 = false">
-          <img src="/assets/img/shinomontazh.jpg" alt="" class="absolute top-0 right-0 brightness-50 w-[600px] h-[400px] object-cover -z-10 rounded-lg">
+          <img src="/assets/img/kolesoMontaj.webp" alt="" class="absolute top-0 right-0 brightness-50 w-[600px] h-[400px] object-cover -z-10 rounded-lg">
           <h3>
             <p class="">
               <span class="text-primary2 max-sxxs:text-4xl text-5xl font-extrabold text-shadow">
-                Бесплатная проверка <br>
+                Скидка 5% на услуги<br>
               </span>
               <span class="text-white max-md:text-2xl text-5xl font-medium text-shadow">
-                колес на геометрию <br>
-                и балансировку <br>
+                шиномонтажа при  <br>
+                условии записи через сайт <br>
               </span>
             </p><p class="text-white text-xl max-md:mt-2 mt-5 text-shadow">
               <br>

@@ -26,11 +26,11 @@
             <span class="font-semibold">сб: </span> <span class="text-[#b87a3c]">10:00 - 15:00 </span>
           </span>
           <a
-            href="tel:+79046474725"
+            href="tel:+79681856015"
             class="text-primary text-xl font-bold text-center"
             @click="sendMessageCall"
           >
-            +7 (904) 647-47-25
+            +7 (968) 185-60-15
           </a>
         </div>
         <div id="menuToggle" class="lg:hidden block mr-2">
@@ -63,15 +63,15 @@
                 </li>
                 <div class="flex flex-col max-ss:flex ss:hidden">
                   <span class="text-white font-light text-lg">
-                    <span class="font-semibold">пн-пт: </span>  <span class="text-[#b87a3c]">10:00 - 19:00 </span>
-                    <span class="font-semibold">сб: </span> <span class="text-[#b87a3c]">10:00 - 15:00 </span>
+                    <span class="font-semibold">пн-пт: </span>  <span>10:00 - 19:00 </span> <br>
+                    <span class="font-semibold">сб: </span> <span>10:00 - 15:00 </span>
                   </span>
                   <a
-                    href="tel:+79046474725"
-                    class="text-xl font-bold text-center"
+                    href="tel:+79681856015"
+                    class="text-xl font-bold text-center text-primary"
                     @click="sendMessageCall"
                   >
-                    +7 (904) 647-47-25
+                    +7 (968) 185-60-15
                   </a>
                 </div>
               </transition-group>

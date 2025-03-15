@@ -41,11 +41,11 @@
           <tbody>
             <tr class="bg-gray-100">
               <td class="border px-4 py-2">Хранение одного комплекта шин (4 шт.) без дисков</td>
-              <td class="border px-4 py-2">1000 руб./сезон</td>
+              <td class="border px-4 py-2">2000 руб./сезон</td>
             </tr>
             <tr class="bg-white">
               <td class="border px-4 py-2">Хранение одного комплекта шин (4 шт.) на дисках</td>
-              <td class="border px-4 py-2">1500 руб./сезон</td>
+              <td class="border px-4 py-2">2500 руб./сезон</td>
             </tr>
             <tr class="bg-gray-100">
               <td class="border px-4 py-2">Мойка шин перед хранением</td>
@@ -58,8 +58,9 @@
         </p>
       </div>
     </article>
-    <p class="text-4xl mb-10 font-bold text-center">
-      У нас вы можете оставить свои шины на хранение все за пьять тыщ....
+    <p class="text-4xl my-10 font-bold text-center">
+      Удобно хранить шины дома? <br>
+      Доверьте это профессионалам!
     </p>
     <div class="flex justify-center my-10">
       <Button
@@ -76,6 +77,20 @@
 import { anhcorScroll } from '@/app/helpers/anhcorScroll'
 definePageMeta({
   layout: 'other-page'
+})
+
+useSeoMeta({
+  title: 'ШИНОМОНТАЖ, СТО  РЕМ. РАБОТЫ ЛЕГКОВЫХ АВТОМОБИЛЕЙ В ГАТЧИНЕ',
+  ogTitle: 'ШИНОМОНТАЖ, СТО  РЕМ. РАБОТЫ ЛЕГКОВЫХ АВТОМОБИЛЕЙ В ГАТЧИНЕ',
+  description: 'Оставьте свои шины на хранение в Wheel Garage по приятной цене...',
+  ogDescription: 'Оставьте свои шины на хранение в Wheel Garage по приятной цене...',
+  ogType: 'website',
+  ogImage: '/assets/img/stoSEO.jpg',
+  ogUrl: `${process.client ? window.location.origin : ''}`,
+  twitterCard: 'summary_large_image',
+  twitterTitle: 'ШИНОМОНТАЖ, СТО  РЕМ. РАБОТЫ ЛЕГКОВЫХ АВТОМОБИЛЕЙ В ГАТЧИНЕ',
+  twitterDescription: 'Оставьте свои шины на хранение в Wheel Garage по приятной цене...',
+  twitterImage: '/assets/img/stoSEO.jpg'
 })
 </script>
 
