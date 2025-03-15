@@ -93,7 +93,7 @@ const openWhatsUp = () => {
   window.open('https://api.whatsapp.com/send?phone=79046474725')
 }
 const openTg = () => {
-  window.open('https://t.me/+79681856015')
+  window.open('https://t.me/+79046474725')
 }
 
 const openCall = () => {
