@@ -3,9 +3,9 @@
     <section class="container">
       <div class="py-5 flex justify-between items-center backdrop-blur-[4px] rounded-lg">
         <img
-          src="/assets/img/logo.png"
+          src="/assets/img/wheel-center-logo-removebg-preview.png"
           alt="logo"
-          class="max-lg:w-[300px] max-sxxs:w-[250px]"
+          class="max-lg:w-[300px] max-sxxs:w-[250px] w-[300px]"
         >
         <div class="max-lg:hidden px-5 py-2 rounded-lg fixed bg-[#a8a8a841] flex items-center justify-center right-0 left-0 w-fit m-auto transition-all z-10">
           <ul class="flex gap-2.5 text-primary text-[14px] font-extrabold ">

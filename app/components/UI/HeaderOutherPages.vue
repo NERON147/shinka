@@ -4,9 +4,9 @@
       <div class="p-5 flex justify-between items-center backdrop-blur-[4px] rounded-lg mt-5">
         <nuxt-link to="/">
           <img
-            src="/assets/img/logo.png"
+            src="/assets/img/wheel-center-logo-removebg-preview.png"
             alt="logo"
-            class="max-xl:w-[300px] max-sxxs:w-[250px]"
+            class="max-xl:w-[300px] max-sxxs:w-[250px] w-[300px]"
           >
         </nuxt-link>
 

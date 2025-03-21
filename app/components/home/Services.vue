@@ -19,7 +19,7 @@
               Подробнее <ArrowLongRightIcon class="h-8 transition-all" :class="{'translate-x-7': hover[0]}" />
             </p>
           </div>
-          <img src="/assets/img/kolesa.png" alt="kolesa" width="300" class="mt-20">
+          <img src="/assets/img/kolesa.png" alt="kolesa" width="300" class="mt-[115px]">
         </div>
       </nuxt-link>
 
