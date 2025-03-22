@@ -15,18 +15,7 @@ export default defineNuxtConfig({
   nitro: {
     preset: 'github-pages'
   },
-  modules: [
-    '@nuxtjs/tailwindcss',
-    'nuxt-primevue',
-    'nuxt-swiper',
-    '@nuxtjs/robots',
-    '@nuxtjs/sitemap'
-  ],
-  robots: {
-    UserAgent: '*',
-    Allow: '/',
-    Sitemap: 'https://wheel-center-gtn.ru/sitemap.xml'
-  },
+  modules: ['@nuxtjs/tailwindcss', 'nuxt-primevue', 'nuxt-swiper'],
   primevue: {
     cssLayerOrder: 'tailwind-base, primevue, tailwind-utilities',
     options: {
