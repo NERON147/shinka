@@ -100,7 +100,7 @@ useSeoMeta({
   twitterImage: '/assets/img/stoSEO.jpg'
 })
 </script>
-добавление файла robots.txt и обновление конфигурации SEO для страниц
+
 <style scoped>
 
 </style>
