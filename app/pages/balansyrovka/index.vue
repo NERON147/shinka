@@ -96,15 +96,15 @@ definePageMeta({
 })
 
 useSeoMeta({
-  title: 'ШИНОМОНТАЖ, СТО  РЕМ. РАБОТЫ ЛЕГКОВЫХ АВТОМОБИЛЕЙ В ГАТЧИНЕ',
-  ogTitle: 'ШИНОМОНТАЖ, СТО  РЕМ. РАБОТЫ ЛЕГКОВЫХ АВТОМОБИЛЕЙ В ГАТЧИНЕ',
+  title: 'Шиомонтаж, СТО  Рем. работы легковых автомобилей в Гатчине',
+  ogTitle: 'Шиомонтаж, СТО  Рем. работы легковых автомобилей в Гатчине',
   description: 'Для чего же нужна балансировка и ее цены...',
   ogDescription: 'Для чего же нужна балансировка и ее цены...',
   ogType: 'website',
   ogImage: '/assets/img/stoSEO.jpg',
   ogUrl: `${process.client ? window.location.origin : ''}`,
   twitterCard: 'summary_large_image',
-  twitterTitle: 'ШИНОМОНТАЖ, СТО  РЕМ. РАБОТЫ ЛЕГКОВЫХ АВТОМОБИЛЕЙ В ГАТЧИНЕ',
+  twitterTitle: 'Шиомонтаж, СТО  Рем. работы легковых автомобилей в Гатчине',
   twitterDescription: 'Для чего же нужна балансировка и ее цены...',
   twitterImage: '/assets/img/stoSEO.jpg'
 })

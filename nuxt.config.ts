@@ -1,6 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
+  site: { url: 'https://wheel-center-gtn.ru' },
   app: {
     baseURL: process.env.NUXT_APP_BASE_URL || '/',
     pageTransition: { name: 'page', mode: 'out-in' },
@@ -8,14 +9,14 @@ export default defineNuxtConfig({
     head: {
       charset: 'utf-8',
       viewport: 'width=device-width, initial-scale=1',
-      title: 'Wheel Garage',
+      title: 'Wheel Center GTN',
       link: [{ rel: 'icon', type: 'image/ico', href: '/assets/img/favicon.ico' }]
     }
   },
   nitro: {
     preset: 'github-pages'
   },
-  modules: ['@nuxtjs/tailwindcss', 'nuxt-primevue', 'nuxt-swiper'],
+  modules: ['@nuxtjs/tailwindcss', 'nuxt-primevue', 'nuxt-swiper', '@nuxtjs/robots', '@nuxtjs/sitemap'],
   primevue: {
     cssLayerOrder: 'tailwind-base, primevue, tailwind-utilities',
     options: {

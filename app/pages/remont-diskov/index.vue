@@ -87,20 +87,20 @@ definePageMeta({
 })
 
 useSeoMeta({
-  title: 'ШИНОМОНТАЖ, СТО  РЕМ. РАБОТЫ ЛЕГКОВЫХ АВТОМОБИЛЕЙ В ГАТЧИНЕ',
-  ogTitle: 'ШИНОМОНТАЖ, СТО  РЕМ. РАБОТЫ ЛЕГКОВЫХ АВТОМОБИЛЕЙ В ГАТЧИНЕ',
-  description: 'Отремонтируйте свои диски в Wheel Garage по приятной цене...',
-  ogDescription: 'Отремонтируйте свои диски в Wheel Garage по приятной цене...',
+  title: 'Шиомонтаж, СТО  Рем. работы легковых автомобилей в Гатчине',
+  ogTitle: 'Шиомонтаж, СТО  Рем. работы легковых автомобилей в Гатчине',
+  description: 'Отремонтируйте свои диски в Wheel Center GTN по приятной цене...',
+  ogDescription: 'Отремонтируйте свои диски в Wheel Center GTN по приятной цене...',
   ogType: 'website',
   ogImage: '/assets/img/stoSEO.jpg',
   ogUrl: `${process.client ? window.location.origin : ''}`,
   twitterCard: 'summary_large_image',
-  twitterTitle: 'ШИНОМОНТАЖ, СТО  РЕМ. РАБОТЫ ЛЕГКОВЫХ АВТОМОБИЛЕЙ В ГАТЧИНЕ',
-  twitterDescription: 'Отремонтируйте свои диски в Wheel Garage по приятной цене...',
+  twitterTitle: 'Шиомонтаж, СТО  Рем. работы легковых автомобилей в Гатчине',
+  twitterDescription: 'Отремонтируйте свои диски в Wheel Center GTN по приятной цене...',
   twitterImage: '/assets/img/stoSEO.jpg'
 })
 </script>
-
+добавление файла robots.txt и обновление конфигурации SEO для страниц
 <style scoped>
 
 </style>
