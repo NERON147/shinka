@@ -83,7 +83,7 @@
               </div>
             </div>
 
-            <img src="/assets/img/hranenenie.png" alt="hranenenie" width="350">
+            <img src="/assets/img/kharanenie.jpg" alt="kharanenie" width="350">
           </div>
         </nuxt-link>
         <nuxt-link to="shinomotaj">

@@ -2,6 +2,7 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   site: { url: 'https://wheel-center-gtn.ru' },
+
   app: {
     baseURL: process.env.NUXT_APP_BASE_URL || '/',
     pageTransition: { name: 'page', mode: 'out-in' },
@@ -13,10 +14,13 @@ export default defineNuxtConfig({
       link: [{ rel: 'icon', type: 'image/ico', href: '/assets/img/favicon.ico' }]
     }
   },
+
   nitro: {
     preset: 'github-pages'
   },
+
   modules: ['@nuxtjs/tailwindcss', 'nuxt-primevue', 'nuxt-swiper', '@nuxtjs/robots', '@nuxtjs/sitemap'],
+
   primevue: {
     cssLayerOrder: 'tailwind-base, primevue, tailwind-utilities',
     options: {
@@ -24,7 +28,9 @@ export default defineNuxtConfig({
       inputStyle: 'filled'
     }
   },
+
   css: ['primevue/resources/themes/aura-light-green/theme.css', '~/app/assets/css/main.css'],
+
   dir: {
     modules: 'app/modules',
     plugins: 'app/plugins',
@@ -32,5 +38,7 @@ export default defineNuxtConfig({
     layouts: 'app/layouts',
     middleware: 'app/middleware'
   },
-  components: ['app/UIComponents']
+
+  components: ['app/UIComponents'],
+  compatibilityDate: '2025-03-23'
 })
