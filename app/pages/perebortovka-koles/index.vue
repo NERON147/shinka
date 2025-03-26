@@ -85,7 +85,6 @@ import { anhcorScroll } from '@/app/helpers/anhcorScroll'
 definePageMeta({
   layout: 'other-page'
 })
-
 useSeoMeta({
   title: 'Шиномонтаж, СТО  Рем. работы легковых автомобилей в Гатчине',
   ogTitle: 'Шиномонтаж, СТО  Рем. работы легковых автомобилей в Гатчине',
