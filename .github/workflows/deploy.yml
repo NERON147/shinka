@@ -1,0 +1,32 @@
+name: Deploy Nuxt 3 to JustHost
+
+on:
+  push:
+    branches:
+      - main  # или другая ветка
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup SSH
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan -H wheel-center-gtn.ru >> ~/.ssh/known_hosts
+
+      - name: Deploy via SSH
+        run: |
+          ssh user@wheel-center-gtn.ru << 'EOF'
+            source /home/s960180/nodevenv/domains/wheel-center-gtn.ru/16/bin/activate
+            cd /home/s960180/domains/wheel-center-gtn.ru
+            git pull origin main
+            npm install
+            npm run build
+            pm2 restart all  # или другой способ перезапуска
+          EOF
