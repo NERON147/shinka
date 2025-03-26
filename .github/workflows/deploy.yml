@@ -22,7 +22,7 @@ jobs:
 
       - name: Deploy via SSH
         run: |
-          ssh s960180@wheel-center-gtn.ru << 'EOF'
+          ssh faip98.07.5@gmail.com@wheel-center-gtn.ru << 'EOF'
             source /home/s960180/nodevenv/domains/wheel-center-gtn.ru/16/bin/activate
             cd /home/s960180/domains/wheel-center-gtn.ru
             git pull origin main
