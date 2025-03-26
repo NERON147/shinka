@@ -80,15 +80,15 @@ definePageMeta({
 })
 
 useSeoMeta({
-  title: 'Шиомонтаж, СТО  Рем. работы легковых автомобилей в Гатчине',
-  ogTitle: 'Шиомонтаж, СТО  Рем. работы легковых автомобилей в Гатчине',
+  title: 'Шиномонтаж, СТО  Рем. работы легковых автомобилей в Гатчине',
+  ogTitle: 'Шиномонтаж, СТО  Рем. работы легковых автомобилей в Гатчине',
   description: 'Оставьте свои шины на хранение в Wheel Center GTN по приятной цене...',
   ogDescription: 'Оставьте свои шины на хранение в Wheel Center GTN по приятной цене...',
   ogType: 'website',
   ogImage: '/assets/img/stoSEO.jpg',
   ogUrl: `${process.client ? window.location.origin : ''}`,
   twitterCard: 'summary_large_image',
-  twitterTitle: 'Шиомонтаж, СТО  Рем. работы легковых автомобилей в Гатчине',
+  twitterTitle: 'Шиномонтаж, СТО  Рем. работы легковых автомобилей в Гатчине',
   twitterDescription: 'Оставьте свои шины на хранение в Wheel Center GTN по приятной цене...',
   twitterImage: '/assets/img/stoSEO.jpg'
 })

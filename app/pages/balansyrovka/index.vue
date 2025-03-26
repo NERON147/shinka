@@ -96,15 +96,15 @@ definePageMeta({
 })
 
 useSeoMeta({
-  title: 'Шиомонтаж, СТО  Рем. работы легковых автомобилей в Гатчине',
-  ogTitle: 'Шиомонтаж, СТО  Рем. работы легковых автомобилей в Гатчине',
+  title: 'Шиномонтаж, СТО  Рем. работы легковых автомобилей в Гатчине',
+  ogTitle: 'Шиномонтаж, СТО  Рем. работы легковых автомобилей в Гатчине',
   description: 'Для чего же нужна балансировка и ее цены...',
   ogDescription: 'Для чего же нужна балансировка и ее цены...',
   ogType: 'website',
   ogImage: '/assets/img/stoSEO.jpg',
   ogUrl: `${process.client ? window.location.origin : ''}`,
   twitterCard: 'summary_large_image',
-  twitterTitle: 'Шиомонтаж, СТО  Рем. работы легковых автомобилей в Гатчине',
+  twitterTitle: 'Шиномонтаж, СТО  Рем. работы легковых автомобилей в Гатчине',
   twitterDescription: 'Для чего же нужна балансировка и ее цены...',
   twitterImage: '/assets/img/stoSEO.jpg'
 })

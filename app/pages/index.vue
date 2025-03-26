@@ -15,7 +15,7 @@
             работ от профессионалов
           </div>
         </h1>
-        <div class="mt-24 flex gap-10 max-ss:gap-5 !font-light max-ss:flex-wrap">
+        <div class="mt-24 flex gap-10 max-ss:gap-5 !font-light max-ss:flex-wrap items-center">
           <Button
             label="Оставить заявку"
             class="bg-[#b87a3c] border-[#b87a3c] h-12 hover:bg-[#946435] hover:border-[#946435] max-ss:w-full"
@@ -23,7 +23,7 @@
             @click="anhcorScroll('footer')"
           />
           <Button
-            class="text-white border-white h-12 hover:border-[#bbbbbb] max-ss:w-fit max-ss:mx-auto max-ss:mt-5"
+            class="text-white border-white h-12 hover:border-[#bbbbbb] max-ss:w-fit max-ss:mx-auto max-xs:mt-5"
             outlined
             @click="openWhatsUp"
           >
@@ -76,15 +76,15 @@ import { useSendToTg } from '~/app/composables/useSendToTg'
 
 const { sendMessageCall } = useSendToTg()
 useSeoMeta({
-  title: 'Шиомонтаж, СТО  Рем. работы легковых автомобилей в Гатчине',
-  ogTitle: 'Шиомонтаж, СТО  Рем. работы легковых автомобилей в Гатчине',
+  title: 'Шиномонтаж, СТО  Рем. работы легковых автомобилей в Гатчине',
+  ogTitle: 'Шиномонтаж, СТО  Рем. работы легковых автомобилей в Гатчине',
   description: 'Шиномонтаж техническое обслуживание и ремонт авто в Гатчине по приятным ценам',
   ogDescription: 'Шиномонтаж техническое обслуживание и ремонт авто в Гатчине по приятным ценам',
   ogType: 'website',
   ogImage: '/assets/img/stoSEO.jpg',
   ogUrl: `${process.client ? window.location.origin : ''}`,
   twitterCard: 'summary_large_image',
-  twitterTitle: 'Шиомонтаж, СТО  Рем. работы легковых автомобилей в Гатчине',
+  twitterTitle: 'Шиномонтаж, СТО  Рем. работы легковых автомобилей в Гатчине',
   twitterDescription: 'Шиномонтаж техническое обслуживание и ремонт авто в Гатчине по приятным ценам',
   twitterImage: '/assets/img/stoSEO.jpg'
 })
