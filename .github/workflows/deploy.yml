@@ -20,9 +20,14 @@ jobs:
           chmod 600 ~/.ssh/id_rsa
           ssh-keyscan -H wheel-center-gtn.ru >> ~/.ssh/known_hosts
 
+      - name: Start SSH agent
+        run: |
+          eval "$(ssh-agent -s)"
+          ssh-add ~/.ssh/id_rsa
+
       - name: Deploy via SSH
         run: |
-          ssh user@wheel-center-gtn.ru << 'EOF'
+          ssh -t user@wheel-center-gtn.ru << 'EOF'
             source /home/s960180/nodevenv/domains/wheel-center-gtn.ru/16/bin/activate
             cd /home/s960180/domains/wheel-center-gtn.ru
             git pull origin main
