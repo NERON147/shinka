@@ -16,6 +16,15 @@
 <script setup>
 import Footer from '~/app/components/UI/Footer.vue'
 
+const route = useRoute()
+
+watch(() => route.path, (newPath) => {
+  useHead({
+    link: [
+      { rel: 'canonical', href: `https://wheel-center-gtn.ru${newPath}` }
+    ]
+  })
+}, { immediate: true })
 </script>
 
 <style>
