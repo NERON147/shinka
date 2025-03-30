@@ -25,6 +25,7 @@ watch(() => route.path, (newPath) => {
     ]
   })
 }, { immediate: true })
+
 </script>
 
 <style>
