@@ -3,7 +3,7 @@
     <h1 class="font-bold text-4xl mt-40 text-center">
       Продажа резины
     </h1>
-    <img src="/assets/img/noviye-shiny.jpg" alt="" class="rounded-3xl max-sm:h-auto h-[400px] w-auto m-auto my-10">
+    <img loading="lazy" src="/assets/img/noviye-shiny.jpg" alt="" class="rounded-3xl max-sm:h-auto h-[400px] w-auto m-auto my-10">
     <p class="text-4xl mb-10 font-bold text-center">
       У нас огромный выбор шин на любой вкус, свяжитесь с нами и наш специлист подберет для Вас самый лучший и выгодный вариант!
     </p>

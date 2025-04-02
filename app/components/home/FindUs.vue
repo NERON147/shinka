@@ -17,7 +17,7 @@
           </a>
         </div>
         <div>
-          <iframe class="rounded-lg w-[500px] h-[350px] max-ss:w-[300px] max-ss:h-[300px]" src="https://yandex.ru/map-widget/v1/?um=constructor%3A7ddb8e653b31db18684b992c7c41174d3afaba58f367add488ccb2058aa69674&amp;source=constructor" frameborder="0" />
+          <iframe title="map" class="rounded-lg w-[500px] h-[350px] max-ss:w-[300px] max-ss:h-[300px]" src="https://yandex.ru/map-widget/v1/?um=constructor%3A7ddb8e653b31db18684b992c7c41174d3afaba58f367add488ccb2058aa69674&amp;source=constructor" frameborder="0" />
         </div>
       </div>
     </div>

@@ -11,7 +11,10 @@ export default defineNuxtConfig({
       charset: 'utf-8',
       viewport: 'width=device-width, initial-scale=1',
       title: 'Wheel Center GTN',
-      link: [{ rel: 'icon', type: 'image/ico', href: '/assets/img/favicon.ico' }]
+      link: [{ rel: 'icon', type: 'image/ico', href: '/assets/img/favicon.ico' }],
+      htmlAttrs: {
+        lang: 'ru'
+      }
     }
   },
 

@@ -19,7 +19,7 @@
               Подробнее <ArrowLongRightIcon class="h-8 transition-all" :class="{'translate-x-7': hover[0]}" />
             </p>
           </div>
-          <img src="/assets/img/kolesa.png" alt="kolesa" width="300" class="mt-[115px]">
+          <img loading="lazy" src="/assets/img/kolesa.png" alt="kolesa" width="300" class="mt-[115px]">
         </div>
       </nuxt-link>
 
@@ -38,7 +38,7 @@
             <div class="mt-2" />
           </div>
 
-          <img src="/assets/img/kolesa-bez-diska.png" alt="kolesa-bez-diska" width="210" class="max-sm:ml-[15px] ml-[135px] max-ss:mt-10">
+          <img loading="lazy" src="/assets/img/kolesa-bez-diska.webp" alt="kolesa-bez-diska" width="210" class="max-sm:ml-[15px] ml-[135px] max-ss:mt-10">
         </div>
         <nuxt-link to="balansyrovka">
           <div class="bg-primary2 rounded-xl col-span-3 max-xs:w-full w-fit flex max-w-[700px] overflow-hidden max-ss:flex-wrap cursor-pointer" @mouseover="hover[2] = true" @mouseout="hover[2] = false">
@@ -58,7 +58,7 @@
               </div>
             </div>
 
-            <img src="/assets/img/klych.png" alt="klych" width="360" class="max-xs:hidden -mr-[10px]">
+            <img loading="lazy" src="/assets/img/klych.png" alt="klych" width="360" class="max-xs:hidden -mr-[10px]">
           </div>
         </nuxt-link>
       </div>
@@ -83,7 +83,7 @@
               </div>
             </div>
 
-            <img src="/assets/img/kharanenie.jpg" alt="kharanenie" width="350">
+            <img loading="lazy" src="/assets/img/kharanenie.jpg" alt="kharanenie" width="350">
           </div>
         </nuxt-link>
         <nuxt-link to="shinomotaj">
@@ -104,7 +104,7 @@
               </div>
             </div>
 
-            <img src="/assets/img/perebortovka.png" alt="perebortovka" width="370" class="max-xs:hidden max-sm:ml-[15px] ml-[100px]">
+            <img loading="lazy" src="/assets/img/perebortovka.png" alt="perebortovka" width="370" class="max-xs:hidden max-sm:ml-[15px] ml-[100px]">
           </div>
         </nuxt-link>
       </div>
@@ -126,7 +126,7 @@
             </div>
           </div>
 
-          <img src="/assets/img/disk.png" alt="disk" width="270" class="absolute bottom-0 right-0">
+          <img loading="lazy" src="/assets/img/disk.webp" alt="webp" width="270" class="absolute bottom-0 right-0">
         </div>
       </nuxt-link>
     </div>
@@ -149,7 +149,8 @@
             </div>
           </div>
 
-          <img src="/assets/img/stoLex.jpg" alt="sto" width="350" class="max-xs:hidden ml-auto">
+          <img loading="lazy" src="/assets/img/stoLex.jpg" alt="sto" width="350" class="max-xs:hidden ml-auto">
+          <img loading="lazy" src="/assets/img/tools.webp" alt="tools" width="370" class="max-xs:block hidden">
         </div>
       </div>
     </nuxt-link>

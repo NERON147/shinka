@@ -3,7 +3,7 @@
     <h1 class="font-bold text-4xl mt-40 text-center">
       Услуги СТО
     </h1>
-    <img src="/assets/img/stoDescr.jpg" alt="" class="rounded-3xl max-sm:h-auto h-[400px] w-auto m-auto my-10">
+    <img loading="lazy" src="/assets/img/stoDescr.jpg" alt="" class="rounded-3xl max-sm:h-auto h-[400px] w-auto m-auto my-10">
     <article class="bg-white p-6 rounded-lg shadow-lg">
       <h2 class="text-2xl font-bold mb-4">Услуги СТО: Комплексное Обслуживание Вашего Автомобиля</h2>
       <p class="mb-4">

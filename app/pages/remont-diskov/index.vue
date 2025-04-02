@@ -3,7 +3,7 @@
     <h1 class="font-bold text-4xl mt-40 text-center">
       Ремонт дисков
     </h1>
-    <img src="/assets/img/remont-diskov.jpg" alt="" class="rounded-3xl max-sm:h-auto h-[400px] w-auto m-auto my-10">
+    <img loading="lazy" src="/assets/img/remont-diskov.jpg" alt="" class="rounded-3xl max-sm:h-auto h-[400px] w-auto m-auto my-10">
     <article class="bg-white p-6 rounded-lg shadow-lg">
       <h2 class="text-2xl font-bold mb-4">Что такое ремонт дисков колес и зачем он нужен?</h2>
       <p class="mb-4">
