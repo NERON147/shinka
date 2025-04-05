@@ -4,7 +4,7 @@
       НАШИ УСЛУГИ
     </h2>
     <div class="flex gap-16 max-xs:gap-10 justify-center mt-20 max-ss:flex-wrap">
-      <nuxt-link to="shinomotaj">
+      <nuxt-link to="shinomontaj">
         <div class="bg-[#262626] p-8 rounded-xl col-span-3 w-fit max-ss:w-full cursor-pointer" @mouseover="hover[0] = true" @mouseout="hover[0] = false">
           <p class="mt-5 flex gap-2 items-center">
             <span class="text-gray-500 text-sm">
@@ -86,7 +86,7 @@
             <img loading="lazy" src="/assets/img/kharanenie.jpg" alt="kharanenie" width="350">
           </div>
         </nuxt-link>
-        <nuxt-link to="shinomotaj">
+        <nuxt-link to="shinomontaj">
           <div class="bg-[#d4d4d4] rounded-xl col-span-3 max-xs:w-full w-fit flex max-w-[700px] overflow-hidden cursor-pointer" @mouseover="hover[4] = true" @mouseout="hover[4] = false">
             <div class="p-8">
               <p class="mt-5 flex gap-2 items-center">

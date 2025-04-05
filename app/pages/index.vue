@@ -11,8 +11,7 @@
             </span> <br> АВТОМОБИЛЕЙ В ГАТЧИНЕ
           </div>
           <div class="text-white font-light text-2xl tracking-[3px] mt-10">
-            Полный комплекс <span class="text-[#e69443] font-extrabold cursor-pointer" @click="anhcorScroll('prices')">шиномонтажных </span> и <nuxt-link to="sto"><span class="text-[#e69443] font-extrabold">СТО</span> </nuxt-link>  <br>
-            работ от профессионалов
+            Полный комплекс услуг <span class="text-[#e69443] font-extrabold cursor-pointer" @click="anhcorScroll('prices')">шиномонтажа</span> и <br> <nuxt-link to="sto"><span class="text-[#e69443] font-extrabold">обслуживания автомобиля</span></nuxt-link> <br> от профессионалов
           </div>
         </h1>
         <div class="mt-24 flex gap-10 max-ss:gap-5 !font-light max-ss:flex-wrap items-center">
@@ -76,16 +75,16 @@ import { useSendToTg } from '~/app/composables/useSendToTg'
 
 const { sendMessageCall } = useSendToTg()
 useSeoMeta({
-  title: 'Шиномонтаж, СТО  Рем. работы легковых автомобилей в Гатчине',
-  ogTitle: 'Шиномонтаж, СТО  Рем. работы легковых автомобилей в Гатчине',
-  description: 'Шиномонтаж техническое обслуживание и ремонт авто в Гатчине по приятным ценам',
-  ogDescription: 'Шиномонтаж техническое обслуживание и ремонт авто в Гатчине по приятным ценам',
+  title: 'Шиномонтаж, СТО Автосервисные работы легковых автомобилей в Гатчине',
+  ogTitle: 'Шиномонтаж, СТО Автосервисные работы легковых автомобилей в Гатчине',
+  description: 'Шиномонтаж, техническое обслуживание, автосервис, замена масла и ремонт авто в Гатчине по приятным ценам',
+  ogDescription: 'Шиномонтаж, техническое обслуживание, автосервис, замена масла и ремонт авто в Гатчине по приятным ценам',
   ogType: 'website',
   ogImage: '/assets/img/stoSEO.jpg',
   ogUrl: `${process.client ? window.location.origin : ''}`,
   twitterCard: 'summary_large_image',
-  twitterTitle: 'Шиномонтаж, СТО  Рем. работы легковых автомобилей в Гатчине',
-  twitterDescription: 'Шиномонтаж техническое обслуживание и ремонт авто в Гатчине по приятным ценам',
+  twitterTitle: 'Шиномонтаж, техническое обслуживание, автосервис, замена масла и ремонт авто в Гатчине по приятным ценам',
+  twitterDescription: 'Шиномонтаж, техническое обслуживание, автосервис, замена масла и ремонт авто в Гатчине по приятным ценам',
   twitterImage: '/assets/img/stoSEO.jpg'
 })
 

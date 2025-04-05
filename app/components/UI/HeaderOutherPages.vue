@@ -102,7 +102,7 @@ const data = reactive({
   nav: [
     {
       name: 'ШИНОМОНТАЖ',
-      to: 'shinomotaj'
+      to: 'shinomontaj'
     },
     {
       name: 'БАЛАНСИРОВКА',
@@ -114,7 +114,7 @@ const data = reactive({
     },
     {
       name: 'ПЕРЕБОРТОВКА',
-      to: 'shinomotaj'
+      to: 'shinomontaj'
     },
     {
       name: 'РЕМОНТ ДИСКОВ',
