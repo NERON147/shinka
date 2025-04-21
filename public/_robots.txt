@@ -1,7 +1,5 @@
 User-agent: *
-Disallow: /admin/
-Disallow: /login/
-Disallow: /cart/
+Disallow: /privacy/
 Allow: /
 
 Sitemap: https://wheel-center-gtn.ru/sitemap.xml
