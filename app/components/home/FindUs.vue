@@ -16,8 +16,15 @@
             Нажмите чтобы построить маршрут до: <br> <span class="font-normal">станция Фрезерная, 1, посёлок Торфяное, <br> Гатчинский муниципальный округ, Ленинградская область</span>
           </a>
         </div>
-        <div>
-          <iframe title="map" class="rounded-lg w-[500px] h-[350px] max-ss:w-[300px] max-ss:h-[300px]" src="https://yandex.ru/map-widget/v1/?um=constructor%3A7ddb8e653b31db18684b992c7c41174d3afaba58f367add488ccb2058aa69674&amp;source=constructor" frameborder="0" />
+        <div style="position:relative;overflow:hidden;" class="rounded-lg w-[560px] h-[400px]">
+          <a href="https://yandex.ru/maps/org/shinny_tsentr/11583592634/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Шинный центр</a><a href="https://yandex.ru/maps/10174/saint-petersburg-and-leningrad-oblast/category/tire_service/184105260/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">Шиномонтаж в Санкт‑Петербурге и Ленинградской области</a><iframe
+            src="https://yandex.ru/map-widget/v1/org/shinny_tsentr/11583592634/?ll=30.158079%2C59.551491&z=16"
+            width="560"
+            height="400"
+            frameborder="1"
+            allowfullscreen="true"
+            style="position:relative;"
+          />
         </div>
       </div>
     </div>

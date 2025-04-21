@@ -1,6 +1,6 @@
 <template>
   <section id="prices" class="container">
-    <h2 class="max-sxxs:text-2xl max-sm:text-3xl max-md:text-4xl text-5xl text-center font-extrabold mt-[100px]">
+    <h2 class="max-sxxs:text-2xl max-sm:text-3xl max-md:text-4xl text-5xl text-center font-extrabold pt-[100px]">
       ЦЕНЫ НА УСЛУГИ
     </h2>
     <h2 class="font-semibold mb-3">ПРАЙС-ЛИСТ НА УСЛУГИ ШИНОМОНТАЖА (С 01.02.2025)</h2>

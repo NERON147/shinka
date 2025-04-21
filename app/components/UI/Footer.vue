@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-gradient-to-r from-black to-slate-900 relative h-[696px] max-ss:h-auto">
+  <section class="bg-gradient-to-r from-black to-slate-900 relative h-[696px] max-ss:h-auto max-ss:pb-5">
     <div class="container text-white flex max-sxxs:h-full h-full items-center">
       <div class="max-md:w-full w-1/2">
         <p class="max-ss:text-xl text-2xl mt-10">
@@ -45,7 +45,6 @@
 </template>
 
 <script setup lang="ts">
-import axios from 'axios'
 import { useToast } from 'primevue/usetoast'
 import { useVuelidate } from '@vuelidate/core'
 import { required } from '@vuelidate/validators'
@@ -84,24 +83,39 @@ const sendMessage = async () => {
   <b> Имя: </b>  ${data.name}
   <b> Телефон: </b>  ${data.phone} \n 
   `
-    const chatId = '-1002238302043'
-    await axios.post('https://api.telegram.org/bot7282294081:AAFefQZH9b4CxTQeUv1RPbIBduUnoqTbrVk/sendMessage', {
-      chat_id: chatId,
-      parse_mode: 'html',
-      text: orderToTG
-    })
-      .then(() => {
-        data.name = ''
-        data.phone = ''
-        data.apply = false
-        v$.value.$reset()
-        data.loader = false
-        toast.add({ severity: 'success', summary: 'Успешно!', detail: 'Заявка отправлена успешно, в ближайшее время наш сотрудник Вам перезвонит, спасибо за доверие!', group: 'bl', life: 6000 })
+
+    try {
+      await $fetch('/api/send-message', {
+        method: 'POST',
+        body: {
+          text: orderToTG
+        }
       })
-      .catch(() => {
-        data.loader = false
-        toast.add({ severity: 'error', summary: 'Ошибка!', detail: 'Упс, произошла ошибка, попробуйте еще раз через некоторе время, либо позвоните нам сами!', group: 'bl', life: 6000 })
+
+      data.name = ''
+      data.phone = ''
+      data.apply = false
+      v$.value.$reset()
+      data.loader = false
+
+      toast.add({
+        severity: 'success',
+        summary: 'Успешно!',
+        detail: 'Заявка отправлена успешно, в ближайшее время наш сотрудник Вам перезвонит, спасибо за доверие!',
+        group: 'bl',
+        life: 6000
       })
+    } catch (e) {
+      data.loader = false
+
+      toast.add({
+        severity: 'error',
+        summary: 'Ошибка!',
+        detail: 'Упс, произошла ошибка, попробуйте еще раз через некоторое время, либо позвоните нам сами!',
+        group: 'bl',
+        life: 6000
+      })
+    }
   }
 }
 </script>

@@ -1,6 +1,6 @@
 <template>
   <section id="services" class="container !max-w-[1125px]">
-    <h2 class="max-sxxs:text-2xl max-sm:text-3xl max-md:text-4xl text-5xl text-center font-extrabold mt-[100px]">
+    <h2 class="max-sxxs:text-2xl max-sm:text-3xl max-md:text-4xl text-5xl text-center font-extrabold pt-[100px]">
       НАШИ УСЛУГИ
     </h2>
     <div class="flex gap-16 max-xs:gap-10 justify-center mt-20 max-ss:flex-wrap">
