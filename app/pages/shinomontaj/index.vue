@@ -1,6 +1,6 @@
 <template>
   <main>
-    <Price class="!mb-10 !pt-40" />
+    <Price class="!mb-10 !pt-[100px]" />
   </main>
 </template>
 

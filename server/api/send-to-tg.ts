@@ -18,13 +18,18 @@ export default defineEventHandler(async (event) => {
 
   const { question = 'Дозвонились?', options = ['Да', 'Нет'] } = body
 
-  const chatId = process.env.CHAT_ID
-  const token = process.env.TELEGRAM_BOT_TOKEN
+  const config = useRuntimeConfig()
+  const token = config.telegramBotToken
+  const chatId = config.chatId
 
   if (!token || !chatId) {
-    return {
-      error: 'Missing Telegram token or chat ID'
-    }
+    throw createError({
+      statusCode: 400,
+      statusMessage: 'Missing Telegram token or chat ID',
+      data: {
+        error: 'Missing Telegram token or chat ID'
+      }
+    })
   }
 
   try {
@@ -35,8 +40,7 @@ export default defineEventHandler(async (event) => {
         chat_id: chatId,
         parse_mode: 'html',
         text: '<b> Возможен звонок с сайта </b>',
-        disable_notification: true,
-        is_anonymous: false
+        disable_notification: true
       }
     })
 

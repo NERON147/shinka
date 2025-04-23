@@ -17,8 +17,13 @@ export default defineNuxtConfig({
       }
     }
   },
+  runtimeConfig: {
+    telegramBotToken: process.env.NUXT_TELEGRAM_BOT_TOKEN,
+    chatId: process.env.NUXT_CHAT_ID,
+    public: {}
+  },
   nitro: {
-    preset: 'github-pages'
+    preset: 'node-server' // или 'vercel' / 'netlify' / 'digital-ocean'
   },
 
   modules: ['@nuxtjs/tailwindcss', 'nuxt-primevue', 'nuxt-swiper', '@nuxtjs/robots', '@nuxtjs/sitemap'],

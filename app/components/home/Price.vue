@@ -109,7 +109,7 @@
     <p>Очистка обода диска от коррозии – 150* Установка камеры в колесо - 100* Услуги, не предусмотренные прейскурантом – 2000р/ч</p>
     <p>*-без учета стоимости работ по шиномонтажу</p>
 
-    <div class="flex justify-center mt-10">
+    <div class="flex justify-center mt-10 mb-10">
       <Button
         label="Оставить заявку"
         class="bg-[#b87a3c] border-[#b87a3c] h-12 hover:bg-[#946435] hover:border-[#946435]"

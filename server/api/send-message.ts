@@ -15,12 +15,20 @@ export default defineEventHandler(async (event) => {
     })
   }
 
+  const config = useRuntimeConfig()
+  const token = config.telegramBotToken
+  const chatId = config.chatId
+
   const body = await readBody(event)
-  const token = process.env.TELEGRAM_BOT_TOKEN
-  const chatId = process.env.CHAT_ID
 
   if (!token || !chatId) {
-    return { error: 'Missing Telegram credentials' }
+    throw createError({
+      statusCode: 400,
+      statusMessage: 'Missing Telegram token or chat ID',
+      data: {
+        error: 'Missing Telegram token or chat ID'
+      }
+    })
   }
 
   try {

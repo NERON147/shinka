@@ -11,6 +11,9 @@ export function useSendToTg () {
       }
     })
       .catch((error) => {
+        if (error.message.includes('Missing Telegram token or chat ID')) {
+          return
+        }
         toast.add({ severity: 'error', summary: 'Ошибка!', detail: error?.data?.data?.error ?? error.message, group: 'bl', life: 6000 })
       })
   }

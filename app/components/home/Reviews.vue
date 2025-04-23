@@ -8,7 +8,7 @@
 
       <div style="max-width:560px;height:800px;overflow:hidden;position:relative;" class="mx-auto">
         <iframe style="width:100%;height:100%;border:1px solid #e6e6e6;border-radius:8px;box-sizing:border-box" src="https://yandex.ru/maps-reviews-widget/11583592634?comments" />
-        <a href="https://yandex.ru/maps/org/usadba_izmaylovo/226327670406/" target="_blank" style="box-sizing:border-box;text-decoration:none;color:#b3b3b3;font-size:10px;font-family:YS Text,sans-serif;padding:0 20px;position:absolute;bottom:8px;width:100%;text-align:center;left:0">Шинный центер на карте — Яндекс.Карты</a>
+        <a href="https://yandex.ru/maps/org/usadba_izmaylovo/226327670406/" target="_blank" style="box-sizing:border-box;text-decoration:none;color:#b3b3b3;font-size:10px;font-family:YS Text,sans-serif;padding:0 20px;position:absolute;bottom:8px;width:100%;text-align:center;left:0">Шинный центр на карте — Яндекс.Карты</a>
       </div>
       <div class="flex justify-center mt-10">
         <Button
