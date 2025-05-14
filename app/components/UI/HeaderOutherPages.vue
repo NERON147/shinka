@@ -25,8 +25,8 @@
         </div>
         <div class="flex flex-col max-ss:hidden">
           <span class="font-light text-lg max-xl:text-base">
-            <span class="font-semibold">пн-пт: </span>  <span class="text-[#b87a3c]">10:00 - 20:00 </span>
-            <span class="font-semibold">сб-вс: </span> <span class="text-[#b87a3c]">10:00 - 17:00 </span>
+            <span class="font-semibold">пн-пт: </span>  <span class="text-[#b87a3c]">10:00 - 19:00 </span>
+            <span class="font-semibold">сб: </span> <span class="text-[#b87a3c]">10:00 - 15:00 </span>
           </span>
           <a
             href="tel:+79681856015"
@@ -71,8 +71,8 @@
 
                 <div class="flex flex-col max-ss:flex ss:hidden">
                   <span class="text-white font-light text-lg">
-                    <span class="font-semibold">пн-пт: </span>  <span class="text-[#ffc183] font-medium">10:00 - 20:00 </span> <br>
-                    <span class="font-semibold">сб-вс: </span> <span class="text-[#ffc183] font-medium">10:00 - 17:00 </span>
+                    <span class="font-semibold">пн-пт: </span>  <span class="text-[#ffc183] font-medium">10:00 - 19:00 </span> <br>
+                    <span class="font-semibold">сб: </span> <span class="text-[#ffc183] font-medium">10:00 - 15:00 </span>
                   </span>
                   <a
                     href="tel:+79681856015"
