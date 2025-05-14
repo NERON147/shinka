@@ -20,7 +20,7 @@
             </li>
           </ul>
         </div>
-        <div class="flex flex-col max-ss:hidden">
+        <div class="flex flex-col max-ss:hidden mr-2">
           <span class="text-primary font-light text-lg">
             <span class="font-semibold">пн-пт: </span>  <span class="text-[#b87a3c]">10:00 - 19:00 </span>
             <span class="font-semibold">сб: </span> <span class="text-[#b87a3c]">10:00 - 15:00 </span>
@@ -47,34 +47,36 @@
           </label>
           <transition name="fade">
             <div v-if="data.isDropdownOpen" class="dropdown">
-              <transition-group
-                name="fade"
-                tag="ul"
-                class="options-container"
-              >
-                <li
-                  v-for="(link, index) in data.nav"
-                  :key="link.name"
-                  class="font-extrabold text-xl text-primary2"
-                  :style="{ animationDelay: `${index * 0.1}s` }"
-                  @click="anhcorScroll(link.id); data.isDropdownOpen = !data.isDropdownOpen"
+              <nav>
+                <transition-group
+                  name="fade"
+                  tag="ul"
+                  class="options-container"
                 >
-                  {{ link.name }}
-                </li>
-                <div class="flex flex-col max-ss:flex ss:hidden">
-                  <span class="text-white font-light text-lg">
-                    <span class="font-semibold">пн-пт: </span>  <span class="text-[#ffc183] font-medium">10:00 - 19:00 </span> <br>
-                    <span class="font-semibold">сб: </span> <span class="text-[#ffc183] font-medium">10:00 - 15:00 </span>
-                  </span>
-                  <a
-                    href="tel:+79681856015"
-                    class="text-xl font-bold text-center text-[#ffbc79] underline underline-offset-4"
-                    @click="sendMessageCall"
+                  <li
+                    v-for="(link, index) in data.nav"
+                    :key="link.name"
+                    class="font-extrabold text-xl text-primary2"
+                    :style="{ animationDelay: `${index * 0.1}s` }"
+                    @click="anhcorScroll(link.id); data.isDropdownOpen = !data.isDropdownOpen"
                   >
-                    +7 (968) 185-60-15
-                  </a>
-                </div>
-              </transition-group>
+                    {{ link.name }}
+                  </li>
+                  <div class="flex flex-col max-ss:flex ss:hidden">
+                    <span class="text-white font-light text-lg">
+                      <span class="font-semibold">пн-пт: </span>  <span class="text-[#ffc183] font-medium">10:00 - 19:00</span> <br>
+                      <span class="font-semibold">сб: </span> <span class="text-[#ffc183] font-medium">10:00 - 15:00 </span>
+                    </span>
+                    <a
+                      href="tel:+79681856015"
+                      class="text-xl font-bold text-center text-[#ffbc79] underline underline-offset-4"
+                      @click="sendMessageCall"
+                    >
+                      +7 (968) 185-60-15
+                    </a>
+                  </div>
+                </transition-group>
+              </nav>
             </div>
           </transition>
         </div>
